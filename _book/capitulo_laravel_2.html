@@ -1,0 +1,894 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Laravel 2. Controladores, filtros y formularios | Introducción</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./capitulo_laravel_3.html" />
+    
+    
+    <link rel="prev" href="./capitulo_laravel_1.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="13" data-basepath="." data-revision="1422271212353">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introducción
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="capitulo_introduccion_web.html">
+            
+                
+                    <a href="./capitulo_introduccion_web.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Introducción al desarrollo Web
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="capitulo_introduccion_javascript.html">
+            
+                
+                    <a href="./capitulo_introduccion_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Introducción a JavaScript
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="capitulo_diseno_responsive.html">
+            
+                
+                    <a href="./capitulo_diseno_responsive.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Diseño Responsive
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="capitulo_diseno_responsive_avanzado.html">
+            
+                
+                    <a href="./capitulo_diseno_responsive_avanzado.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Diseño Responsive avanzado
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="capitulo_jquery_mobile.html">
+            
+                
+                    <a href="./capitulo_jquery_mobile.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         JQuery Mobile
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="capitulo_jquery_mobile_avanzado.html">
+            
+                
+                    <a href="./capitulo_jquery_mobile_avanzado.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         JQuery Mobile avanzado
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="capitulo_sencha_touch_1.html">
+            
+                
+                    <a href="./capitulo_sencha_touch_1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Sencha Touch 1. Introducción
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="capitulo_sencha_touch_2.html">
+            
+                
+                    <a href="./capitulo_sencha_touch_2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Sencha Touch 2. Componentes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="capitulo_sencha_touch_3.html">
+            
+                
+                    <a href="./capitulo_sencha_touch_3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Sencha Touch 3. Almacenamiento
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="capitulo_phonegap.html">
+            
+                
+                    <a href="./capitulo_phonegap.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         PhoneGap 1. Introducción
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="capitulo_phonegap_avanzado.html">
+            
+                
+                    <a href="./capitulo_phonegap_avanzado.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         PhoneGap 2. Avanzado
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="capitulo_laravel_1.html">
+            
+                
+                    <a href="./capitulo_laravel_1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Laravel 1. Introducción
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="13" data-path="capitulo_laravel_2.html">
+            
+                
+                    <a href="./capitulo_laravel_2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Laravel 2. Controladores, filtros y formularios
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="capitulo_laravel_3.html">
+            
+                
+                    <a href="./capitulo_laravel_3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         Laravel 3. Base de datos
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="capitulo_laravel_4.html">
+            
+                
+                    <a href="./capitulo_laravel_4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         Laravel 4. Datos de entrada y control de usuarios
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="capitulo_laravel_5.html">
+            
+                
+                    <a href="./capitulo_laravel_5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         Laravel 5. Paquetes, Rest y Curl
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="capitulo_rest.html">
+            
+                
+                    <a href="./capitulo_rest.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         Servicios Rest
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Introducción</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_10">
+                    
+                        <h1 id="laravel-2---controladores-filtros-y-formularios">Laravel 2 - Controladores, filtros y formularios</h1>
+<!-- ************************************************************************-->
+<h1 id="controladores">Controladores</h1>
+<p>Hasta el momento hemos visto solamente como devolver una cadena para una ruta y como asociar una vista a una ruta directamente en el fichero de rutas. Pero en general la forma recomendable de trabajar será asociar dichas rutas a un método de un controlador. Esto nos permitirá separar mucho mejor el código y crear clases (controladores) que agrupen toda la funcionalidad de un determinado recurso. Por ejemplo, podemos crear un controlador para gestionar toda la lógica asociada al control de usuarios o cualquier otro tipo de recurso. Como ya hemos visto antes, los controladores son el punto de entrada de las peticiones de los usuarios y son los que deben contener toda la lógica asociada al procesamiento de una petición, encargándose de realizar las consultas necesarias a la base de datos, de preparar los datos y de llamar a la vista correspondiente con dichos datos.</p>
+<p>Los controladores se almacenan en ficheros PHP en la carpeta <code>app/controllers</code>, sin embargo también podemos crear sub-carpetas dentro de esta carpeta para organizarnos mejor. En este caso, la estructura de carpetas que creemos no tendrá nada que ver con la ruta asociada y, de hecho, a la hora de hacer referencia al controlador tampoco hará falta indicar la carpeta donde se encuentra.</p>
+<p>A continuación se incluye un ejemplo básico de un controlador almacenado en el fichero <code>app/controllers/UserController.php</code>:</p>
+<pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseController</span>
+</span>{
+    <span class="hljs-comment">/**
+     * Mostrar información de un usuario.
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">showProfile</span><span class="hljs-params">(<span class="hljs-variable">$id</span>)</span>
+    </span>{
+        <span class="hljs-variable">$user</span> = User::find(<span class="hljs-variable">$id</span>);
+
+        <span class="hljs-keyword">return</span> View::make(<span class="hljs-string">'user.profile'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'user'</span> =&gt; <span class="hljs-variable">$user</span>));
+    }
+}
+</code></pre>
+<p>Como se puede ver el controlador de ejemplo extiende de la clase <code>BaseController</code>. Esta clase, que también está almacenada en la carpeta <code>app/controllers</code>, nos sirve para centralizar toda la lógica que vayan a utilizar de forma compartida los controladores de nuestra aplicación. Si abrimos esta clase veremos que a su vez extiende de la clase <code>Controller</code>, la cual se utiliza para definir un controlador en Laravel. Por defecto solo incluye un método, pero podemos añadir en la misma todos los métodos que necesitemos.</p>
+<p>En el código de ejemplo, el método <code>showProfile($id)</code> lo único que realiza es obtener los datos de un usuario, generar la vista <code>user.profile</code> a partir de los datos obtenidos y devolverla como valor de retorno para que se muestre por pantalla.</p>
+<p>Una vez definido un controlador ya podemos asociarlo a una ruta. Para esto tenemos que modificar el fichero de rutas <code>routes.php</code> de la forma:</p>
+<pre><code class="lang-php">Route::get(<span class="hljs-string">'user/{id}'</span>, <span class="hljs-string">'UserController@showProfile'</span>);
+</code></pre>
+<p>Como se puede ver, en lugar de pasar una función como segundo parámetro, tenemos que escribir una cadena que contenga el nombre del controlador, seguido de una arroba <code>@</code> y del nombre del método que queremos asociar. No es necesario añadir nada más, ni la carpeta en la que se encuentra el controlador, ni los parámetros que recibe el método en cuestión, todo esto se hace de forma automática.</p>
+<p>Además, si queremos generar la URL que apunte a una acción de un controlador, Laravel nos facilita los siguientes métodos (equivalentes):</p>
+<pre><code class="lang-php"><span class="hljs-variable">$url</span> = URL::action(<span class="hljs-string">'FooController@method'</span>);
+
+<span class="hljs-variable">$url</span> = action(<span class="hljs-string">'FooController@method'</span>);
+</code></pre>
+<!-- ************************************************************************-->
+<h2 id="definir-el-_layout_-a-utilizar-por-un-controlador">Definir el <em>layout</em> a utilizar por un controlador</h2>
+<p>Una opción interesante de los controladores es poder indicar el <em>layout</em> que van a utilizar las vistas que se devuelvan. De esta forma se puede desacoplar las vistas de los <em>layouts</em>, permitiendo que una misma vista se puede renderizar con diferentes <em>layouts</em>. A continuación se incluye un ejemplo:</p>
+<pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseController</span>
+</span>{
+    <span class="hljs-comment">/**
+     * Layout a utilizizar en las respuestas
+     */</span>
+    <span class="hljs-keyword">protected</span> <span class="hljs-variable">$layout</span> = <span class="hljs-string">'layouts.master'</span>;
+
+    <span class="hljs-comment">/**
+     * Mostrar información de un usuario.
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">showProfile</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-variable">$this</span><span class="hljs-variable">-&gt;layout</span><span class="hljs-variable">-&gt;content</span> = View::make(<span class="hljs-string">'user.profile'</span>);
+    }
+}
+</code></pre>
+<p>Como se puede ver, solo tenemos que establecer el valor de la variable protegida <code>layout</code> con el <em>layout</em> a utilizar y posteriormente, en vez de devolver la vista, asignarla a una variable del <em>layout</em>.</p>
+<!-- ************************************ -->
+<h2 id="controladores-implcitos">Controladores implícitos</h2>
+<p>Laravel también permite definir fácilmente la creación de controladores como recursos que capturen todas las rutas de un derminado dominio. Por ejemplo, capturar todas las consultas que se realicen a la URL &quot;users&quot; o &quot;users&quot; seguido de cualquier cosa (por ejemplo &quot;users/profile&quot;). Para esto en primer lugar tenemos que definir la ruta en el fichero de rutas usando <code>Route::controller</code> de la forma:</p>
+<pre><code class="lang-php">Route::controller(<span class="hljs-string">'users'</span>, <span class="hljs-string">'UserController'</span>);
+</code></pre>
+<p>Esto quiere decir que todas las peticiones realizadas a la ruta &quot;users&quot; o subrutas de &quot;users&quot; se redirigirán al controlador <code>UserController</code>. Además se capturarán las peticiones de cualquier tipo, ya sean GET o POST, a dichas rutas. Para gestionar estas rutas en el controlador tenemos que seguir un patrón a la hora de definir el nombre de los métodos: primero tendremos que poner el tipo de petición y después la sub-ruta a la que debe de responder. Por ejemplo, para gestionar las peticiones tipo GET a la URL &quot;users/profile&quot; tendremos que crear el método &quot;getProfile&quot;. La única excepción a este caso es &quot;Index&quot; que se referirá a las peticiones a la ruta raíz, por ejemplo &quot;getIndex&quot; gestionará las peticiones GET a &quot;users&quot;. A continuación se incluye un ejemplo:</p>
+<pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseController</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getIndex</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-comment">//</span>
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">postProfile</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-comment">//</span>
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">anyLogin</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-comment">//</span>
+    }
+}
+</code></pre>
+<p>Además, si queremos crear rutas con varias palabras lo podemos hacer usando la notación &quot;<em>CamelCase</em>&quot; en el nombre del método. Por ejemplo el método &quot;getAdminProfile&quot; será parseado a la ruta &quot;users/admin-profile&quot;.</p>
+<p>También podemos definir un método especial que capture las todas las peticiones &quot;perdidas&quot; o no capturadas por el resto de métodos. Para esto simplemente tenemos que definir un método con el nombre <code>missingMethod</code> que recibirá por parámetros la ruta y los parámetros de la petición:</p>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">missingMethod</span><span class="hljs-params">(<span class="hljs-variable">$parameters</span> = array<span class="hljs-params">()</span>)</span>
+</span>{
+    <span class="hljs-comment">//</span>
+}
+</code></pre>
+<!-- ************************************************************************-->
+<h1 id="aplicar-filtros-a-las-rutas">Aplicar filtros a las rutas</h1>
+<p>Laravel nos permite aplicar filtros a las rutas que definimos en el fichero <code>routes.php</code>. Esta característica es muy útil para por ejemplo validar que solo puedan acceder usuarios validados a determinadas áreas de nuestro sitio web o realizar otro tipo de validaciones.</p>
+<!-- ************************************** -->
+<h2 id="definir-filtros">Definir filtros</h2>
+<p>Laravel incluye por defecto algunos de los filtros más comunes, los cuales están definidos en el fichero <code>app/filters.php</code>. Por ejemplo incluye los filtros <code>auth</code> y <code>guest</code> que nos permiten validar si el usuario que visita la ruta está <em>logueado</em> o no, o el filtro <code>csrf</code> para protegernos de ataques tipo <em>cross-site request forgery</em> como veremos más adelante.</p>
+<p>Pero además de estos filtros nos permite definir nuestros propios filtros. Para esto tenemos que añadir el filtro al fichero <code>app/filters.php</code>, por ejemplo:</p>
+<pre><code class="lang-php">Route::filter(<span class="hljs-string">'old'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">if</span> (Input::get(<span class="hljs-string">'age'</span>) &lt; <span class="hljs-number">200</span>)
+    {
+        <span class="hljs-keyword">return</span> Redirect::to(<span class="hljs-string">'home'</span>);
+    }
+});
+</code></pre>
+<p>Si el filtro devuelve una respuesta, una redirección u otra cosa, entonces esta se considerará la respuesta de la petición. Si no devuelve nada entonces se continuará con el procesamiento normal.</p>
+<!-- ************************************** -->
+<h2 id="asignar-un-filtro-a-una-ruta">Asignar un filtro a una ruta</h2>
+<p>Para añadir un filtro a una ruta tenemos que editar el fichero <code>routes.php</code> e incluir, para la ruta en cuestión el filtro como un array asociativo de la forma:</p>
+<pre><code class="lang-php">Route::get(<span class="hljs-string">'user'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'before'</span> =&gt; <span class="hljs-string">'old'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Tienes más de 200 años!'</span>;
+}));
+</code></pre>
+<p>Donde <em>before</em> indica que el filtro se ejecutará antes que el procesamiento de la función respuesta (en general será siempre así) y <code>old</code> es el nombre del filtro (el que habíamos creado antes de ejemplo, también podría ser <code>auth</code>, <code>guest</code>, <code>csrf</code> o alguno otro que nos hayamos definido).</p>
+<p>Para añadir un filtro cuando indicamos que la ruta la procese un controlador lo tenemos que hacer de la forma:</p>
+<pre><code class="lang-php">Route::get(<span class="hljs-string">'user'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'before'</span> =&gt; <span class="hljs-string">'old'</span>, <span class="hljs-string">'uses'</span> =&gt; <span class="hljs-string">'UserController@showProfile'</span>));
+</code></pre>
+<p>Para añadir varios filtros a una ruta simplemente los tenemos que separar mediante <code>|</code>:</p>
+<pre><code class="lang-php">Route::get(<span class="hljs-string">'user'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'before'</span> =&gt; <span class="hljs-string">'auth|old'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">'Estás logueado y tienes más de 200 años!'</span>;
+}));
+</code></pre>
+<p>El comando <code>php artisan routes</code>, además de mostrar una tabla con las rutas definidas para la aplicación, también incluye los filtros que tienen asignadas estas rutas. Por lo tanto es muy útil para comprobar que todas las rutas y filtros que hemos definido se hayan creado correctamente.</p>
+<!-- ************************************** -->
+<h2 id="grupos-de-rutas">Grupos de rutas</h2>
+<p>Laravel permite aplicar un filtro a un grupo de rutas agrupándolas todas dentro de un <code>Route::group</code>, de esta forma solo tendremos que especificar el filtro una vez y además nos permitirá dividir las rutas en secciones (distinguiendo mejor a que secciones se les está aplicando un filtro):</p>
+<pre><code class="lang-php">Route::group(<span class="hljs-keyword">array</span>(<span class="hljs-string">'before'</span> =&gt; <span class="hljs-string">'auth'</span>), <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>
+</span>{
+    Route::get(<span class="hljs-string">'/'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-comment">//</span>
+    });
+
+    Route::get(<span class="hljs-string">'user/profile'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-comment">//</span>
+    });
+});
+</code></pre>
+<!-- ************************************************************************-->
+<h1 id="redirecciones">Redirecciones</h1>
+<p>Como respuesta a una petición también podemos devolver una redirección. Esta opción será interesante cuando, por ejemplo, el usuario no esté <em>logueado</em> y lo queramos redirigir al formulario de login, o cuando se produzca un error en la validación de una petición y queramos redirigir a otra ruta. Para esto simplemente tenemos que utilizar:</p>
+<pre><code class="lang-php"><span class="hljs-keyword">return</span> Redirect::to(<span class="hljs-string">'user/login'</span>);
+
+<span class="hljs-comment">// O redirigir a un método de un controlador:</span>
+
+<span class="hljs-keyword">return</span> Redirect::action(<span class="hljs-string">'HomeController@index'</span>);
+
+<span class="hljs-comment">// Si queremos añadir parámetros al llamar al método podemos hacer:</span>
+<span class="hljs-keyword">return</span> Redirect::action(<span class="hljs-string">'UserController@profile'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-number">1</span>));
+<span class="hljs-keyword">return</span> Redirect::action(<span class="hljs-string">'UserController@profile'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'user'</span> =&gt; <span class="hljs-number">1</span>));
+</code></pre>
+<p>Las redirecciones también se suelen utilizar tras obtener algún error en la validación del formulario. En este caso, para que al mostrar el formulario con los errores producidos podamos añadir los datos que había escrito el usuario tendremos que añadir:</p>
+<pre><code class="lang-php"><span class="hljs-keyword">return</span> Redirect::to(<span class="hljs-string">'form'</span>)<span class="hljs-variable">-&gt;withInput</span>();
+
+<span class="hljs-comment">// O para reenviar los datos de entrada excepto algunos:</span>
+<span class="hljs-keyword">return</span> Redirect::to(<span class="hljs-string">'form'</span>)<span class="hljs-variable">-&gt;withInput</span>(Input::except(<span class="hljs-string">'password'</span>));
+</code></pre>
+<!-- ************************************************************************-->
+<h1 id="formularios">Formularios</h1>
+<p>Laravel también incluye métodos que nos ayudan para la generación de formularios en nuestro código. En esta sección vamos a ver las opciones más básicas: como abrir y cerrar formularios, y como añadir etiquetas y algunos otros tipos de campos.</p>
+<blockquote>
+<p>Nota: Los métodos de Laravel únicamente generan de las etiquetas HTML del formulario, pero no aplican ningún estilo ni clase CSS.</p>
+</blockquote>
+<p>Para abrir y cerrar un formulario que apunte a la URL actual y utilice el método POST utilizaríamos el siguiente código:</p>
+<pre><code class="lang-php">{{ Form::open() }}
+    <span class="hljs-comment">//</span>
+{{ Form::close() }}
+</code></pre>
+<p>Si queremos cambiar la URL de envío de datos se lo podemos añadir por parámetro:</p>
+<pre><code class="lang-php">{{ Form::open(<span class="hljs-keyword">array</span>(<span class="hljs-string">'url'</span> =&gt; <span class="hljs-string">'foo/bar'</span>)) }}
+</code></pre>
+<p>Por defecto el formulario se enviará por POST, pero si queremos cambiar el método de envío también lo podemos especificar en los parámetros:</p>
+<pre><code class="lang-php">{{ Form::open(<span class="hljs-keyword">array</span>(<span class="hljs-string">'url'</span> =&gt; <span class="hljs-string">'foo/bar'</span>, <span class="hljs-string">'method'</span> =&gt; <span class="hljs-string">'put'</span>)) }}
+</code></pre>
+<blockquote>
+<p>Nota: el envío de formularios en realidad solamente soporta los métodos POST y GET, por lo que si indicamos que se utilice PUT o DELETE el sistema de forma automática añadirá un campo oculto para gestionarlo.</p>
+</blockquote>
+<p>Laravel también permite especificar la URL de envío del formulario indicando la acción del controlador de la forma:</p>
+<pre><code class="lang-php">{{ Form::open(<span class="hljs-keyword">array</span>(<span class="hljs-string">'action'</span> =&gt; <span class="hljs-string">'Controller@method'</span>)) }}
+
+<span class="hljs-comment">// También podemos pasarle parámetros a la ruta</span>
+{{ Form::open(<span class="hljs-keyword">array</span>(<span class="hljs-string">'action'</span> =&gt; <span class="hljs-keyword">array</span>(<span class="hljs-string">'Controller@method'</span>, <span class="hljs-variable">$user</span><span class="hljs-variable">-&gt;id</span>))) }}
+</code></pre>
+<p>Además, si queremos que el formulario pueda enviar archivos tendremos que especificarlo añadiendo el atributo <code>files</code> con valor <code>true</code> en los parámetros:</p>
+<pre><code class="lang-php">{{ Form::open(<span class="hljs-keyword">array</span>(<span class="hljs-string">'url'</span> =&gt; <span class="hljs-string">'foo/bar'</span>, <span class="hljs-string">'files'</span> =&gt; <span class="hljs-keyword">true</span>)) }}
+</code></pre>
+<h2 id="proteccin-contra-csrf">Protección contra CSRF</h2>
+<p>El CSRF (del inglés <em>Cross-site request forgery</em> o falsificación de petición en sitios cruzados) es un tipo de exploit malicioso de un sitio web en el que comandos no autorizados son transmitidos por un usuario en el cual el sitio web confía.</p>
+<p>Laravel proporciona una forma fácil de protegernos de este tipo de ataques. De forma automática, al crear un formulario que utilice el método POST, PUT o DELETE, se le añadirá un campo oculto con una clave utilizada para la validación de la sesión del usuario. Lo único que nos faltaría es añadir para esa ruta (la del envío de la petición POST, PUT o DELETE) que tiene que aplicar el filtro <code>csrf</code>, de la forma:</p>
+<pre><code class="lang-php">Route::post(<span class="hljs-string">'profile'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'before'</span> =&gt; <span class="hljs-string">'csrf'</span>, <span class="hljs-string">'uses'</span> =&gt; <span class="hljs-string">'UserController@postProfile'</span>));
+</code></pre>
+<!-- *********************************** -->
+<h2 id="etiquetas">Etiquetas</h2>
+<p>Para crear una etiqueta simplemente tenemos que usar el constructor <code>Form::label</code>, el cual recibe como primer parámetro el atributo <code>for</code> de la etiqueta (para asociar una etiqueta con un <em>input</em>) y como segundo parámetro el texto a mostrar:</p>
+<pre><code class="lang-php">{{ Form::label(<span class="hljs-string">'email'</span>, <span class="hljs-string">'Dirección de E-Mail'</span>) }}
+</code></pre>
+<p>Además podemos añadir parámetros extra a las etiqueta pasando un array asociativo como tercer parámetro. Esto nos permitirá especificar, por ejemplo las clases a aplicar sobre la etiqueta, estilos, etc.</p>
+<pre><code class="lang-php">{{ Form::label(<span class="hljs-string">'email'</span>, <span class="hljs-string">'E-Mail Address'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'class'</span> =&gt; <span class="hljs-string">'awesome'</span>)) }}
+</code></pre>
+<!-- *********************************** -->
+<h2 id="campos-de-texto-textarea-password-y-ocultos">Campos de texto, textarea, password y ocultos</h2>
+<p>Para crear un campo de texto usamos el constructor <code>Form::text</code>:</p>
+<pre><code class="lang-php">{{ Form::text(<span class="hljs-string">'username'</span>) }}
+
+<span class="hljs-comment">// También podemos especificar un valor por defecto:</span>
+{{ Form::text(<span class="hljs-string">'email'</span>, <span class="hljs-string">'example@gmail.com'</span>) }}
+</code></pre>
+<p>A continuación se incluyen más ejemplos para crear campos de tipo <em>textarea</em>, <em>password</em> y <em>hidden</em>:</p>
+<pre><code class="lang-php">{{ Form::textarea(<span class="hljs-string">'textarea'</span>) }}
+
+{{ Form::password(<span class="hljs-string">'password'</span>) }}
+
+{{ Form::hidden(<span class="hljs-string">'hidden'</span>) }}
+</code></pre>
+<p>También podemos crear otro tipo de <em>inputs</em> (como <em>email</em>, <em>number</em>, etc.). En general recibirán como segundo parámetro el valor por defecto y como tercer parámetro el array de atributos del mismo (el cual nos permitirá indicar la clase a aplicar, estilos, etc.).</p>
+<pre><code class="lang-php">{{ Form::email(<span class="hljs-variable">$name</span>, <span class="hljs-variable">$value</span> = <span class="hljs-keyword">null</span>, <span class="hljs-variable">$attributes</span> = <span class="hljs-keyword">array</span>()) }}
+</code></pre>
+<!-- *********************************** -->
+<h2 id="checkbox-y-radio-buttons">Checkbox y Radio buttons</h2>
+<p>Para crear campos tipo <em>checkbox</em> o tipo <em>radio button</em> utilizamos los siguientes constructores:</p>
+<pre><code class="lang-php">{{ Form::checkbox(<span class="hljs-string">'name'</span>, <span class="hljs-string">'value'</span>) }}
+
+{{ Form::radio(<span class="hljs-string">'name'</span>, <span class="hljs-string">'value'</span>) }}
+</code></pre>
+<p>Además podemos incluir un tercer parámetro para indicar que el campo tiene que estar seleccionado por defecto.</p>
+<pre><code class="lang-php">{{ Form::checkbox(<span class="hljs-string">'name'</span>, <span class="hljs-string">'value'</span>, <span class="hljs-keyword">true</span>) }}
+
+{{ Form::radio(<span class="hljs-string">'name'</span>, <span class="hljs-string">'value'</span>, <span class="hljs-keyword">true</span>) }}
+</code></pre>
+<!-- *********************************** -->
+<h2 id="ficheros">Ficheros</h2>
+<p>Para generar un <em>input</em> para subir ficheros utilizamos el siguiente constructor:</p>
+<pre><code class="lang-php">{{ Form::file(<span class="hljs-string">'image'</span>) }}
+</code></pre>
+<blockquote>
+<p>En este caso tendremos que crear el formulario especificando la opción <code>files</code> con valor <em>true</em> para permitir el envío de archivos.</p>
+</blockquote>
+<!-- *********************************** -->
+<h2 id="listas-desplegables">Listas desplegables</h2>
+<p>Para crear un desplegable tipo <em>select</em> utilizamos el constructor <code>Form::select</code> pasándole como primer parámetro el nombre del campo y como segundo el array de valores a mostrar:</p>
+<pre><code class="lang-php">{{ Form::select(<span class="hljs-string">'size'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'L'</span> =&gt; <span class="hljs-string">'Large'</span>, <span class="hljs-string">'S'</span> =&gt; <span class="hljs-string">'Small'</span>)) }}
+
+<span class="hljs-comment">// Para seleccionar un valor por defecto lo añadimos como tercer parámetro:</span>
+{{ Form::select(<span class="hljs-string">'size'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'L'</span> =&gt; <span class="hljs-string">'Large'</span>, <span class="hljs-string">'S'</span> =&gt; <span class="hljs-string">'Small'</span>), <span class="hljs-string">'S'</span>) }}
+</code></pre>
+<!-- *********************************** -->
+<h2 id="botones">Botones</h2>
+<p>A continuación se incluyen ejemplo para crear un botón tipo <code>submit</code> y otro botón normal:</p>
+<pre><code class="lang-php">{{ Form::submit(<span class="hljs-string">'Enviar'</span>) }}
+
+{{ Form::button(<span class="hljs-string">'Enviar'</span>) }}
+</code></pre>
+<p>Si por ejemplo queremos aplicarle alguna clase lo podemos añadir como un array en el segundo parámetro:</p>
+<pre><code class="lang-php">{{ Form::button(<span class="hljs-string">'Enviar'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'class'</span> =&gt; <span class="hljs-string">'btn btn-primary'</span>) ) }}
+</code></pre>
+<!-- ************************************************************************-->
+<!-- ************************************************************************-->
+<!-- ************************************************************************-->
+<!-- ************************************************************************-->
+<!-- ************************************************************************-->
+<h1 id="ejercicios">Ejercicios</h1>
+<p>En los ejercicios de esta parte vamos a continuar con el sitio Web que empezamos para la gestión de un videoclub. En primer lugar añadiremos los controladores y métodos asociados a cada ruta, y posteriormente también completaremos las vistas usando las plantillas <em>Blade</em> y formularios.</p>
+<!-- ************************************* -->
+<h2 id="ejercicio-1---controladores-1-punto">Ejercicio 1 - Controladores (1 punto)</h2>
+<p>En este primer ejercicio vamos a crear los controladores necesarios para gestionar nuestra aplicación y actualizaremos el fichero de rutas para que los utilice.</p>
+<p>En primer lugar creamos los dos controladores que nos van a hacer falta: <code>CatalogController.php</code> y <code>UserController.php</code>. Como base podemos coger el controlador que viene de ejemplo <code>HomeController.php</code> y renombrarlo. Este controlador ya extiende de la clase base <code>BaseController</code> y tiene un método creado. Además nos tenemos que acordar de cambiar también el nombre de la clase por el que corresponda.</p>
+<p>A continuación vamos a añadir los métodos que vamos a necesitar en estos controladores. En <code>UserController.php</code> tendremos que crear tres métodos y en <code>CatalogController.php</code> cuatro, en la siguiente tabla resumen podemos ver un listado de los métodos por controlador y las rutas que tendrán asociadas:</p>
+<table>
+<thead>
+<tr>
+<th>Ruta</th>
+<th>Controlador</th>
+<th>Método</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/</td>
+<td>UserController</td>
+<td>getHome</td>
+</tr>
+<tr>
+<td>login</td>
+<td>UserController</td>
+<td>getLogin</td>
+</tr>
+<tr>
+<td>logout</td>
+<td>UserController</td>
+<td>getLogout</td>
+</tr>
+<tr>
+<td>catalog</td>
+<td>CatalogController</td>
+<td>getIndex</td>
+</tr>
+<tr>
+<td>catalog/show/{id}</td>
+<td>CatalogController</td>
+<td>getShow</td>
+</tr>
+<tr>
+<td>catalog/create</td>
+<td>CatalogController</td>
+<td>getCreate</td>
+</tr>
+<tr>
+<td>catalog/edit/{id}</td>
+<td>CatalogController</td>
+<td>getEdit</td>
+</tr>
+</tbody>
+</table>
+<p>Acordaros que los métodos <code>getShow</code> y <code>getEdit</code> tendrán que recibir como parámetro el <code>$id</code> del elemento a mostrar, por lo que la definición del método en el controlador tendrá que ser como la siguiente:</p>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getShow</span><span class="hljs-params">(<span class="hljs-variable">$id</span>)</span>
+</span>{
+    <span class="hljs-keyword">return</span> View::make(<span class="hljs-string">'catalog.show'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'id'</span>=&gt;<span class="hljs-variable">$id</span>));
+}
+</code></pre>
+<p>Por último vamos a cambiar el fichero de rutas <code>routes.php</code> para que todas las rutas que teníamos definidas apunten a los nuevos métodos de los controladores, por ejemplo:</p>
+<pre><code class="lang-php">Route::get(<span class="hljs-string">'/'</span>, <span class="hljs-string">'UserController@getHome'</span>);
+</code></pre>
+<p>El return con la generación de la vista que teníamos puesto para cada ruta lo moveremos al método del controlador correspondiente.</p>
+<!-- ************************************* -->
+<h2 id="ejercicio-2---completar-las-vistas-de-usuario-05-puntos">Ejercicio 2 - Completar las vistas de usuario (0.5 puntos)</h2>
+<p>En este ejercicio vamos a completar los métodos del controlador de usuarios y sus vistas asociadas:</p>
+<p><strong>Método getHome</strong></p>
+<p>En este método de momento solo vamos a hacer una redirección a la acción de <em>login</em>: <code>return Redirect::action(&#39;UserController@getLogin&#39;);</code>. Más adelante tendremos que distinguir si el usuario está logueado o no.</p>
+<p><strong>Método getLogout</strong></p>
+<p>En el método para cerrar la sesión también haremos una redirección a la acción de <em>login</em>. Más adelante tendremos que completar este método para que cierre la sesión abierta.</p>
+<p><strong>Método getLogin</strong></p>
+<p>En este método vamos a modificar su vista asociada para incluir el formulario de acceso. En los materiales de los ejercicios podéis encontrar una plantilla <code>login.blade.php</code> para esta vista con casi todas las secciones ya completadas (solo faltan un par de TODOs). Esta plantilla además tiene ya aplicados los estilos de Bootstrap. De momento solo tenéis que completar la parte visual, no es necesario que el formulario realice ninguna acción más.</p>
+<!-- ************************************* -->
+<h2 id="ejercicio-3---completar-las-vistas-del-catlogo-15-puntos">Ejercicio 3 - Completar las vistas del catálogo (1.5 puntos)</h2>
+<p>En este ejercicio vamos a completar los métodos del controlador del catálogo y todas sus vistas asociadas:</p>
+<p><strong>Método getIndex</strong></p>
+<p>Este método tiene que mostrar un listado de todas las películas que tiene el videoclub. El listado de películas lo podéis obtener del fichero <code>array_peliculas.php</code> facilitado con los materiales. Este array de películas lo podéis copiar de momento como variable miembro de la clase (más adelante las almacenaremos en la base de datos). En el método del controlador simplemente tendremos que modificar la generación de la vista para pasarle este array de películas completo (<code>$this-&gt;arrayPeliculas</code>).</p>
+<p>Y en la vista correspondiente simplemente tendremos que incluir el siguiente trozo de código en su sección <code>content</code>:</p>
+<pre><code class="lang-php">&lt;div class="row"&gt;
+
+    @foreach( $arrayPeliculas as $key =&gt; $pelicula )
+    &lt;div class="col-xs-6 col-sm-4 col-md-3 text-center"&gt;
+
+        &lt;a href="{{URL::to('/catalog/show/' . $key )}}"&gt;
+            &lt;img src="{{$pelicula['poster']}}" style="height:200px"/&gt;
+            &lt;h4 style="min-height:45px;margin:5px 0 10px 0"&gt;
+                {{$pelicula['title']}}
+            &lt;/h4&gt;
+        &lt;/a&gt;
+
+    &lt;/div&gt;
+    @endforeach
+
+&lt;/div&gt;
+</code></pre>
+<p>Como se puede ver en el código, en primer lugar se crear una fila (usando el sistema de rejilla de Bootstrap) y a continuación se realiza un bucle <em>foreach</em> utilizando la notación de <em>Blade</em> para iterar por todas las películas. Para cada película obtenemos su posición en el array y sus datos asociados, y generamos una columna para mostrarlos. Es importante que nos fijemos en como se itera por los elementos de un array de datos y en la forma de acceder a los valores. Además se ha incluido un enlace para que al pulsar sobre una película nos lleve a la dirección <code>/catalog/show/{$key}</code>, siendo <code>key</code> la posición de esa película en el array.</p>
+<p><strong>Método getShow</strong></p>
+<p>Este método se utiliza para mostrar la vista detalle de una película. Hemos de tener en cuenta que el método correspondiente recibe un identificador que (de momento) se refiere a la posición de la película en el array. Por lo tanto, tendremos que coger dicha película del array (<code>$this-&gt;arrayPeliculas[$id]</code>) y pasársela a la vista.</p>
+<p>En esta vista vamos a crear dos columnas, la primera columna para mostrar la imagen de la película y la segunda para incluir todos los detalles. A continuación se incluye la estructura HTML que tendría que tener esta pantalla:</p>
+<pre><code class="lang-html">
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-4"</span>&gt;</span>
+
+        {{-- TODO: Imagen de la película --}}
+
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-8"</span>&gt;</span>
+
+        {{-- TODO: Datos de la película --}}
+
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>En la columna de la derecha se tendrán que mostrar todos los datos de la película. Para mostrar el estado de la película consultaremos el valor <code>rented</code> del array, el cual podrá tener dos casos:</p>
+<ul>
+<li>En caso de estar disponible (false) aparecerá el estado &quot;Película disponible&quot; y un botón azul para &quot;Alquilar película&quot;.</li>
+<li>En caso de estar alquilada (true) aparecerá el estado &quot;Película actualmente alquilada&quot; y un botón rojo para &quot;Devolver película&quot;.</li>
+</ul>
+<p>Además tenemos que incluir dos botones más, un botón que nos llevará a editar la película y otro para volver al listado de películas.</p>
+<blockquote>
+<p>Nota: los botones de alquilar/devolver de momento no tienen que funcionar.
+Acordaros que en Bootstrap podemos transformar un enlace en un botón, simplemente aplicando las clases &quot;btn btn-default&quot; (más info en: <a href="http://getbootstrap.com/css/#buttons" target="_blank">http://getbootstrap.com/css/#buttons</a>).</p>
+</blockquote>
+<p>Esta pantalla finalmente tendría que tener una apariencia similar a la siguiente:</p>
+<p><img src="images/web_laravel/sesion_2_ejercicio_2.png" alt=""></p>
+<p><strong>Método getCreate</strong></p>
+<p>Este método mostrará el formulario para añadir una película, el cual tendrá que tener los siguientes campos:</p>
+<table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Name</th>
+<th>Tipo de campo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Título</td>
+<td>title</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>year</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Director</td>
+<td>director</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Poster</td>
+<td>poster</td>
+<td>text</td>
+</tr>
+<tr>
+<td>Resumen</td>
+<td>synopsis</td>
+<td>textarea</td>
+</tr>
+</tbody>
+</table>
+<p>Además añadiremos un botón al final con el texto &quot;Añadir película&quot;.</p>
+<blockquote>
+<p>Como base podemos coger el formulario que hemos creado para la vista de login y modificarlo para adaptar a esta vista.</p>
+<p>De momento el formulario no tendrá que funcionar ni enviar nada. Más adelante completaremos esta funcionalidad.</p>
+</blockquote>
+<p><strong>Método getEdit</strong></p>
+<p>Este método permitirá modificar el contenido de una película. El formulario será exactamente igual al de añadir película, así que lo podemos copiar y pegar en esta vista y simplemente cambiar el título y el texto del botón de envío. De momento no tendremos que hacer nada más, más adelante lo completaremos para que se complete con los datos de la película a editar.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./capitulo_laravel_1.html" class="navigation navigation-prev " aria-label="Previous page: Laravel 1. Introducción"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./capitulo_laravel_3.html" class="navigation navigation-next " aria-label="Next page: Laravel 3. Base de datos"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

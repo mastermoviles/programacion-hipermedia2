@@ -1,0 +1,1046 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Laravel 5. Paquetes, Rest y Curl | Introducción</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./capitulo_rest.html" />
+    
+    
+    <link rel="prev" href="./capitulo_laravel_4.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="16" data-basepath="." data-revision="1422271212353">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introducción
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="capitulo_introduccion_web.html">
+            
+                
+                    <a href="./capitulo_introduccion_web.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Introducción al desarrollo Web
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="capitulo_introduccion_javascript.html">
+            
+                
+                    <a href="./capitulo_introduccion_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Introducción a JavaScript
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="capitulo_diseno_responsive.html">
+            
+                
+                    <a href="./capitulo_diseno_responsive.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Diseño Responsive
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="capitulo_diseno_responsive_avanzado.html">
+            
+                
+                    <a href="./capitulo_diseno_responsive_avanzado.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Diseño Responsive avanzado
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="capitulo_jquery_mobile.html">
+            
+                
+                    <a href="./capitulo_jquery_mobile.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         JQuery Mobile
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="capitulo_jquery_mobile_avanzado.html">
+            
+                
+                    <a href="./capitulo_jquery_mobile_avanzado.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         JQuery Mobile avanzado
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="capitulo_sencha_touch_1.html">
+            
+                
+                    <a href="./capitulo_sencha_touch_1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Sencha Touch 1. Introducción
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="capitulo_sencha_touch_2.html">
+            
+                
+                    <a href="./capitulo_sencha_touch_2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Sencha Touch 2. Componentes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="capitulo_sencha_touch_3.html">
+            
+                
+                    <a href="./capitulo_sencha_touch_3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Sencha Touch 3. Almacenamiento
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="capitulo_phonegap.html">
+            
+                
+                    <a href="./capitulo_phonegap.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         PhoneGap 1. Introducción
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="capitulo_phonegap_avanzado.html">
+            
+                
+                    <a href="./capitulo_phonegap_avanzado.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         PhoneGap 2. Avanzado
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="capitulo_laravel_1.html">
+            
+                
+                    <a href="./capitulo_laravel_1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Laravel 1. Introducción
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="capitulo_laravel_2.html">
+            
+                
+                    <a href="./capitulo_laravel_2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Laravel 2. Controladores, filtros y formularios
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="capitulo_laravel_3.html">
+            
+                
+                    <a href="./capitulo_laravel_3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         Laravel 3. Base de datos
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="capitulo_laravel_4.html">
+            
+                
+                    <a href="./capitulo_laravel_4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         Laravel 4. Datos de entrada y control de usuarios
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="16" data-path="capitulo_laravel_5.html">
+            
+                
+                    <a href="./capitulo_laravel_5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         Laravel 5. Paquetes, Rest y Curl
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="capitulo_rest.html">
+            
+                
+                    <a href="./capitulo_rest.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         Servicios Rest
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Introducción</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_13">
+                    
+                        <h1 id="laravel-5---paquetes-rest-y-curl">Laravel 5 - Paquetes, Rest y Curl</h1>
+<!-- ************************************************************************-->
+<h1 id="instalacin-de-paquetes">Instalación de paquetes</h1>
+<p>Además de todas las utilidades que incorpora Laravel y que podemos utilizar directamente sin instalar nada más, también nos permite añadir de forma muy sencilla paquetes para complementar su funcionalidad.</p>
+<p>Para instalar un paquete tenemos dos opciones, utilizar el comando de <code>composer</code>:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">sudo</span> composer require &lt;nombre-del-paquete<span class="hljs-operator">-a</span>-instalar&gt;
+</code></pre>
+<p>O editar el fichero <code>composer.json</code> de la raíz de nuestro proyecto, añadir el paquete en su sección &quot;<code>require</code>&quot; y  por último ejecutar el comando:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">sudo</span> composer update
+</code></pre>
+<p>Esta última opción es más interesante ya que nos permitirá una mayor configuración, por ejemplo, indicar la versión del paquete o repositorio, etc.</p>
+<p>La lista de todos los paquetes disponibles la podemos encontrar en &quot;<a href="https://packagist.org" target="_blank">https://packagist.org</a>&quot;, en la cual permite realizar búsquedas, ver el número de instalaciones de un paquete, etc.</p>
+<p>Algunos de los paquetes más utilizados en Laravel son:</p>
+<table>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Descripción</th>
+<th>Url</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L4 Generators</td>
+<td>Auto generación de código</td>
+<td><a href="https://github.com/JeffreyWay/Laravel-4-Generators" target="_blank">https://github.com/JeffreyWay/Laravel-4-Generators</a></td>
+</tr>
+<tr>
+<td>Debugbar</td>
+<td>Barra de depuración de Laravel</td>
+<td><a href="https://github.com/barryvdh/laravel-debugbar" target="_blank">https://github.com/barryvdh/laravel-debugbar</a></td>
+</tr>
+<tr>
+<td>L4 IDE Helper</td>
+<td>Helper para IDEs</td>
+<td><a href="https://github.com/barryvdh/laravel-ide-helper" target="_blank">https://github.com/barryvdh/laravel-ide-helper</a></td>
+</tr>
+<tr>
+<td>Confide</td>
+<td>Autenticación</td>
+<td><a href="https://github.com/Zizaco/confide" target="_blank">https://github.com/Zizaco/confide</a></td>
+</tr>
+<tr>
+<td>Entrust</td>
+<td>Roles, permisos</td>
+<td><a href="https://github.com/Zizaco/entrust" target="_blank">https://github.com/Zizaco/entrust</a></td>
+</tr>
+<tr>
+<td>Sentry</td>
+<td>Autenticación, roles, permisos</td>
+<td><a href="https://github.com/cartalyst/sentry" target="_blank">https://github.com/cartalyst/sentry</a></td>
+</tr>
+<tr>
+<td>Ardent</td>
+<td>Modelos auto-validados</td>
+<td><a href="https://github.com/laravelbook/ardent" target="_blank">https://github.com/laravelbook/ardent</a></td>
+</tr>
+<tr>
+<td>MongoDB</td>
+<td>Extensión para soportar MongoDB</td>
+<td><a href="https://github.com/jenssegers/laravel-mongodb" target="_blank">https://github.com/jenssegers/laravel-mongodb</a></td>
+</tr>
+<tr>
+<td>Notification</td>
+<td>Notificaciones</td>
+<td><a href="https://github.com/edvinaskrucas/notification" target="_blank">https://github.com/edvinaskrucas/notification</a></td>
+</tr>
+<tr>
+<td>Former</td>
+<td>Automatización de formularios</td>
+<td><a href="https://github.com/anahkiasen/former" target="_blank">https://github.com/anahkiasen/former</a></td>
+</tr>
+<tr>
+<td>Image</td>
+<td>Manipulación de imágenes</td>
+<td><a href="https://github.com/Intervention/image" target="_blank">https://github.com/Intervention/image</a></td>
+</tr>
+<tr>
+<td>Stapler</td>
+<td>Manipulación de ficheros</td>
+<td><a href="https://github.com/CodeSleeve/laravel-stapler" target="_blank">https://github.com/CodeSleeve/laravel-stapler</a></td>
+</tr>
+<tr>
+<td>User Agent</td>
+<td>Obtener info. del <em>user agent</em></td>
+<td><a href="https://github.com/jenssegers/laravel-agent" target="_blank">https://github.com/jenssegers/laravel-agent</a></td>
+</tr>
+<tr>
+<td>OAuth 4 Laravel</td>
+<td>OAuth para Laravel</td>
+<td><a href="https://github.com/artdarek/oauth-4-laravel" target="_blank">https://github.com/artdarek/oauth-4-laravel</a></td>
+</tr>
+<tr>
+<td>Rocketeer</td>
+<td>Despliegue en servidor con Git</td>
+<td><a href="https://github.com/Anahkiasen/rocketeer" target="_blank">https://github.com/Anahkiasen/rocketeer</a></td>
+</tr>
+<tr>
+<td>Sitemap</td>
+<td>Genearción del Sitemap</td>
+<td><a href="https://github.com/RoumenDamianoff/laravel-sitemap" target="_blank">https://github.com/RoumenDamianoff/laravel-sitemap</a></td>
+</tr>
+<tr>
+<td>Excel</td>
+<td>Trabajar con Excel y csv</td>
+<td><a href="https://github.com/Maatwebsite/Laravel-Excel" target="_blank">https://github.com/Maatwebsite/Laravel-Excel</a></td>
+</tr>
+<tr>
+<td>DOMPdf</td>
+<td>Trabajar con PDF</td>
+<td><a href="https://github.com/barryvdh/laravel-dompdf" target="_blank">https://github.com/barryvdh/laravel-dompdf</a></td>
+</tr>
+</tbody>
+</table>
+<p>Una vez añadido el paquete tendremos que modificar también el fichero de configuración <code>app/config/app.php</code>, en su sección <code>providers</code> y <code>aliases</code>, para que la plataforma encuentre el paquete que acabamos de añadir. Los detalles de configuración en general se encuentran indicados en la web o repositorio de GitHub de cada proyecto.</p>
+<!-- ********************************* -->
+<h2 id="ejemplo-instalacin-de-paquete-de-notificaciones">Ejemplo: instalación de paquete de notificaciones</h2>
+<p>Por ejemplo, para instalar el paquete &quot;Notification&quot; de <em>edvinaskrucas</em> tendríamos que editar el fichero <code>composer.json</code> y en su sección <code>require</code> añadir la siguiente línea:</p>
+<pre><code class="lang-json">&quot;edvinaskrucas/notification&quot;: &quot;3.*&quot;
+</code></pre>
+<blockquote>
+<p>Al añadir el paquete al fichero <code>composer.json</code> tenemos que llevar mucho cuidado de añadir una coma como separador excepto al final del último elemento.</p>
+</blockquote>
+<p>Una vez añadido ejecutamos el siguiente comando para instalar el paquete:</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">sudo</span> composer update
+</code></pre>
+<p>Y después de instalar tendríamos que editar el fichero <code>app/config/app.php</code> para añadir, en la sección <code>providers</code>, la siguiente línea:</p>
+<pre><code class="lang-php"><span class="hljs-string">'Krucas\Notification\NotificationServiceProvider'</span>
+</code></pre>
+<p>Y en la sección <code>aliases</code> lo siguiente:</p>
+<pre><code class="lang-php"><span class="hljs-string">'Notification'</span> =&gt; <span class="hljs-string">'Krucas\Notification\Facades\Notification'</span>
+</code></pre>
+<p>Con esto ya tendríamos instalada esta librería y podríamos empezar a utilizarla. Por ejemplo, para añadir una notificación desde un controlador podemos utilizar los siguientes métodos:</p>
+<pre><code class="lang-php">Notification::success(<span class="hljs-string">'Success message'</span>);
+Notification::error(<span class="hljs-string">'Error message'</span>);
+Notification::info(<span class="hljs-string">'Info message'</span>);
+Notification::warning(<span class="hljs-string">'Warning message'</span>);
+</code></pre>
+<p>Y para mostrar las notificaciones, desde una vista (preferiblemente desde el <em>layout</em> principal), añadiríamos el siguiente código:</p>
+<pre><code class="lang-php">{{ Notification::showAll() }}
+</code></pre>
+<!-- ************************************************************************-->
+<!--
+# Unión entre formulario y modelo de datos
+
+Laravel incluye una forma muy sencilla de rellenar de datos un formulario que está basado en un modelo, simplemente tendremos que abrir el formulario utilizando el método `Form::model` en lugar de `Form::open`, pasándole como primer parámetro una instancia del modelo. Por ejemplo:
+
+```php
+{{ Form::model($user, array('action' => array('Controller@method', $user->id))) }}
+```
+
+El resto de parámetro de este método son exactamente iguales a los que utilizaríamos con `Form::open`.
+
+Al utilizar este método, todos los campos del formulario cuyo nombre coincida con los del modelo serán rellenados con los datos del campo correspondiente que se ha pasado por parámetro. Pero no solo eso, sino que si se produce un error y se envía al usuario otra vez al formulario (con la opción de `withInput`), entonces el formulario automáticamente cogerá los valores que escribió (o modificó) el usuario y los pondrá (dándoles precedencia sobre los valores que ya estaban en el modelo).
+
+
+> Nota: Para cerrar el formulario tenemos que seguir usando el mismo método que antes: `Form::close`
+-->
+<!-- ************************************************************************-->
+<h1 id="controladores-de-recursos-_restful_">Controladores de recursos <em>RESTful</em></h1>
+<p>Laravel incorpora un tipo especial de controlador, llamado controlador de recuso (<em>recource controller</em>), que facilita la construcción de controladores tipo <em>RESTful</em>. Para esto simplemente tendríamos que usar el comando de artisan <code>php artisan controller:make &lt;nombre-controlador&gt;</code> para crear el controlador y añadir la ruta al fichero de rutas <code>routes.php</code> usando <code>Route::resource</code>.</p>
+<p>Por ejemplo, para crear un controlador para la gestión de imágenes almacenadas en la aplicación, en primer lugar ejecutaríamos el siguiente comando:</p>
+<pre><code class="lang-bash">$ php artisan controller:make PhotoController
+</code></pre>
+<p>Esto crearía el controlador <code>PhotoController</code> en la carpeta <code>app/controllers</code>. Lo único que nos faltaría es registrar las rutas asociadas añadiendo al fichero <code>routes.php</code> la siguiente línea:</p>
+<pre><code class="lang-php">Route::resource(<span class="hljs-string">'photo'</span>, <span class="hljs-string">'PhotoController'</span>);
+</code></pre>
+<p>Esta sola línea de ruta crea por si sola múltiples rutas para gestionar todos los tipos de peticiones RESTful. Además, el controlador creado mediante Artisan estará preparado con todos los métodos necesarios para responder a todos los tipos de peticiones. En la siguiente tabla se muestra un resumen de todas las rutas generadas, el tipo de petición a la que responden y la acción que realizan en el controlador:</p>
+<table>
+<thead>
+<tr>
+<th>Verbo</th>
+<th>Ruta</th>
+<th>Acción</th>
+<th>Controlador / método</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>/photo</td>
+<td>index</td>
+<td>PhotoController@index</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/photo/create</td>
+<td>create</td>
+<td>PhotoController@create</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>/photo</td>
+<td>store</td>
+<td>PhotoController@store</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/photo/{resource}</td>
+<td>show</td>
+<td>PhotoController@show</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/photo/{resource}/edit</td>
+<td>edit</td>
+<td>PhotoController@edit</td>
+</tr>
+<tr>
+<td>PUT/PATCH</td>
+<td>/photo/{resource}</td>
+<td>update</td>
+<td>PhotoController@update</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>/photo/{resource}</td>
+<td>destroy</td>
+<td>PhotoController@destroy</td>
+</tr>
+</tbody>
+</table>
+<!-- *********************************** -->
+<h2 id="restringir-rutas-en-un-controlador-restful">Restringir rutas en un controlador RESTful</h2>
+<p>En ocasiones nos interesará declarar solamente un subconjunto de las acciones que soporta REST, para esto, al declarar la ruta tipo <code>resource</code> tenemos que añadir un tercer parámetro con la opción <code>only</code> (para que solo se creen esas rutas) o <code>except</code> (para que se creen todas las rutas excepto las indicadas), por ejemplo:</p>
+<pre><code class="lang-php">Route::resource(<span class="hljs-string">'photo'</span>, <span class="hljs-string">'PhotoController'</span>,
+                <span class="hljs-keyword">array</span>(<span class="hljs-string">'only'</span> =&gt; <span class="hljs-keyword">array</span>(<span class="hljs-string">'index'</span>, <span class="hljs-string">'show'</span>)));
+
+Route::resource(<span class="hljs-string">'photo'</span>, <span class="hljs-string">'PhotoController'</span>,
+                <span class="hljs-keyword">array</span>(<span class="hljs-string">'except'</span> =&gt; <span class="hljs-keyword">array</span>(<span class="hljs-string">'create'</span>, <span class="hljs-string">'store'</span>, <span class="hljs-string">'update'</span>, <span class="hljs-string">'destroy'</span>)));
+</code></pre>
+<p>Además, a la hora de generar el controlador usando Artisan también podemos indicar de la misma forma que no nos genere todos los métodos:</p>
+<pre><code class="lang-php">$ php artisan controller:make PhotoController --only=index,show
+
+$ php artisan controller:make PhotoController --except=index
+</code></pre>
+<!-- *********************************** -->
+<h2 id="controladores-de-recursos-anidados">Controladores de recursos anidados</h2>
+<p>Para &quot;anidar&quot; controladores de recursos se tiene que utilizar el punto &quot;.&quot; como separador de los recursos en la declaración de la ruta, por ejemplo:</p>
+<pre><code class="lang-php">Route::resource(<span class="hljs-string">'photos.comments'</span>, <span class="hljs-string">'PhotoCommentController'</span>);
+</code></pre>
+<p>Esta ruta representaría que el recurso &quot;<em>comments</em>&quot; estaría anidado o contenido en el recurso &quot;<em>photos</em>&quot;.</p>
+<p>Las rutas generadas para este tipo de recursos siguen el siguiente patrón: <code>photos/{photoResource}/comments/{commentResource}</code>, donde se tiene que especificar el identificador de ambos recursos para poder acceder.</p>
+<p>Los controladores asociados recibirían en este caso dos identificadores, primero el del recurso base y segundo el del recurso anidado:</p>
+<pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PhotoCommentController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseController</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">show</span><span class="hljs-params">(<span class="hljs-variable">$photoId</span>, <span class="hljs-variable">$commentId</span>)</span>
+    </span>{
+        <span class="hljs-comment">//</span>
+    }
+}
+</code></pre>
+<!-- *********************************** -->
+<h2 id="rutas-adicionales-en-un-controlador-tipo-restful">Rutas adicionales en un controlador tipo RESTful</h2>
+<p>Si queremos definir rutas adicionales para un controlador de recursos simplemente las tenemos que añadir al fichero de rutas <code>routes.php</code> antes que las rutas del propio recurso, por ejemplo:</p>
+<pre><code class="lang-php">Route::get(<span class="hljs-string">'photos/popular'</span>, <span class="hljs-string">'PhotoController@getPopular'</span>);
+Route::resource(<span class="hljs-string">'photos'</span>, <span class="hljs-string">'PhotoController'</span>);
+</code></pre>
+<!-- ************************************************************************-->
+<h1 id="probar-nuestra-api-con-_curl_">Probar nuestra API con <em>cURL</em></h1>
+<p>Para probar una API lo podemos hacer fácilmente utilizando el comando <code>curl</code> desde consola, el cual permite enviar peticiones de cualquier tipo a una URL, especificar las cabeceras, parámetros, etc.</p>
+<p>Por ejemplo, para realizar una petición tipo GET a una URL simplemente tenemos que hacer:</p>
+<pre><code class="lang-bash">$ curl -i http://localhost/recurso
+
+HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
+Transfer-Encoding: chunked
+Date: Fri, <span class="hljs-number">27</span> Jul <span class="hljs-number">2012</span> <span class="hljs-number">05</span>:<span class="hljs-number">11</span>:<span class="hljs-number">00</span> GMT
+Content-Type: text/plain
+
+¡Hola Mundo!
+</code></pre>
+<p>Donde la opción <code>-i</code> indica que se muestren las cabeceras de la respuesta.</p>
+<p>Opcionalmente, al hacer la petición, podemos indicar las cabeceras con el parámetro <code>-H</code>. Por ejemplo, para solicitar datos en formato JSON tenemos que hacer:</p>
+<pre><code class="lang-bash">$ curl -i -H <span class="hljs-string">"Accept: application/json"</span> http://localhost/recurso
+
+HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">200</span> OK
+Date: Fri, <span class="hljs-number">27</span> Jul <span class="hljs-number">2012</span> <span class="hljs-number">05</span>:<span class="hljs-number">12</span>:<span class="hljs-number">32</span> GMT
+Cache-Control: max-age=<span class="hljs-number">42</span>
+Content-Type: application/json
+Content-Length: <span class="hljs-number">27</span>
+
+{
+    <span class="hljs-string">"text"</span>: <span class="hljs-string">"¡Hola Mundo!"</span>
+}
+</code></pre>
+<p>Como hemos visto por defecto se realiza una petición tipo GET. Si queremos realizar otro tipo de petición lo tendremos que indicar con el parámetro <code>-X</code> seguido del método a utilizar (POST, PUT, DELETE). Además, con la opción <code>-d</code> podemos añadir los parámetros de la petición. Los parámetros tendrán que ir entre comillas y en caso de indicar varios los separaremos con <code>&amp;</code>. Por ejemplo, para realizar una petición tipo POST con dos parámetros:</p>
+<pre><code class="lang-bash">$ curl -i -H <span class="hljs-string">"Accept: application/json"</span> -X POST <span class="hljs-operator">-d</span> <span class="hljs-string">"name=javi&amp;phone=800999800"</span> http://localhost/users
+</code></pre>
+<p>De la misma forma podemos hacer una petición tipo PUT (para actualizar datos) o tipo DELETE (para eliminarlos). Por ejemplo:</p>
+<pre><code class="lang-bash">$ curl -i -H <span class="hljs-string">"Accept: application/json"</span> -X PUT <span class="hljs-operator">-d</span> <span class="hljs-string">"name=new-name"</span> http://localhost/users/<span class="hljs-number">1</span>
+
+$ curl -i -H <span class="hljs-string">"Accept: application/json"</span> -X DELETE http://localhost/users/<span class="hljs-number">1</span>
+</code></pre>
+<p>Para añadir más de una cabecera tenemos que indicar varias veces la opción <code>-H</code>, por ejemplo:</p>
+<pre><code class="lang-bash">$ curl -i -H <span class="hljs-string">"Accept: application/json"</span> -H <span class="hljs-string">"Content-Type: application/json"</span> http://localhost/resource
+
+$ curl -i -H <span class="hljs-string">"Accept: application/xml"</span> -H <span class="hljs-string">"Content-Type: application/xml"</span> http://localhost/resource
+</code></pre>
+<p>Por ejemplo, si queremos realizar una petición tipo POST que envíe código JSON y que también espere la respuesta en JSON tendríamos que indicar ambas cabeceras y añadir el JSON que queramos en los parámetros con <code>i</code> de forma normal:</p>
+<pre><code class="lang-bash">curl -i -H <span class="hljs-string">"Accept: application/json"</span> -H <span class="hljs-string">"Content-Type: application/json"</span> -X POST <span class="hljs-operator">-d</span> <span class="hljs-string">'{"title":"xyz","year":"xyz"}'</span> http://localhost/resource
+</code></pre>
+<p>Como resumen, las opciones más importantes de <code>curl</code> son:</p>
+<table>
+<thead>
+<tr>
+<th>Opción</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-i</code></td>
+<td>Mostrar las cabeceras de respuesta</td>
+</tr>
+<tr>
+<td><code>-H &quot;header&quot;</code></td>
+<td>Configurar las cabeceras de la petición</td>
+</tr>
+<tr>
+<td><code>-X &lt;type&gt;</code></td>
+<td>Indicar el método de la petición: POST, PUT, DELETE. Si no indicamos nada la petición será de tipo GET.</td>
+</tr>
+<tr>
+<td><code>-d &quot;params&quot;</code></td>
+<td>Añadir parámetros a la petición. Los parámetros tendrán que ir entre comillas &quot;&quot;. Si queremos pasar varios parámetros utilizaremos como separador &quot;<code>&amp;</code>&quot;</td>
+</tr>
+</tbody>
+</table>
+<!-- ************************************ -->
+<h2 id="plugins-o-extensiones">Plugins o extensiones</h2>
+<p>Además de <code>curl</code> también podemos utilizar otro tipo de programas para probar una API. En Firefox y Chrome podemos encontrar extensiones que nos facilitarán este tipo de trabajo. Por ejemplo, en Firefox podemos encontrar <em>Poster</em> (<a href="https://addons.mozilla.org/en-US/firefox/addon/poster/" target="_blank">https://addons.mozilla.org/en-US/firefox/addon/poster/</a>). Una vez instalado lo podremos abrir desde <code>Herramientas &gt; Poster</code>, y utilizarlo a través de una interfaz visual muy sencilla.</p>
+<p>Para Chrome también podemos encontrar muchas extensiones si buscamos en su tienda (<a href="https://chrome.google.com/webstore/category/apps" target="_blank">https://chrome.google.com/webstore/category/apps</a>). Algunas opciones interesantes son &quot;<em>Advanced REST client</em>&quot; o &quot;<em>Postman - REST Client</em>&quot;.</p>
+<!-- ************************************************************************-->
+<h1 id="convertir-modelos-en-arrays-o-json">Convertir modelos en Arrays o JSON</h1>
+<p>Laravel incluye métodos para transformar fácilmente el resultado obtenido de la consulta a un modelo de datos a formato JSON o a formato array. Esto es especialmente útil cuando estamos diseñando una API y queremos enviar los datos en formato JSON. Además, al realizar la transformación se incluirán los datos de las relaciones que se hayan cargado al hacer la consulta. Para realizar esta transformación simplemente tenemos que usar los métodos <code>toJson()</code> o <code>toArray()</code> sobre el resultado de la consulta:</p>
+<pre><code class="lang-php"><span class="hljs-variable">$user</span> = User::first();
+
+<span class="hljs-variable">$arrayUsuario</span> = <span class="hljs-variable">$user</span><span class="hljs-variable">-&gt;toArray</span>();
+
+<span class="hljs-variable">$jsonUsuario</span> = <span class="hljs-variable">$user</span><span class="hljs-variable">-&gt;toJson</span>();
+</code></pre>
+<p>También podemos transformar una colección entera de datos a este formato, por ejemplo:</p>
+<pre><code class="lang-php"><span class="hljs-variable">$arrayUsuarios</span> = User::all()<span class="hljs-variable">-&gt;toArray</span>();
+
+<span class="hljs-variable">$jsonUsuarios</span> = User::all()<span class="hljs-variable">-&gt;toJson</span>();
+</code></pre>
+<p>En ocasiones nos interesará ocultar determinados atributos de nuestro modelo en la conversión a array o a JSON, como por ejemplo, el password o el identificador. Para hacer esto tenemos que definir el campo protegido <code>hidden</code> de nuestro modelo con el array de atributos a ocultar:</p>
+<pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Eloquent</span> </span>{
+
+    <span class="hljs-keyword">protected</span> <span class="hljs-variable">$hidden</span> = <span class="hljs-keyword">array</span>(<span class="hljs-string">'password'</span>);
+
+    <span class="hljs-comment">// O también podemos indicar solamente aquellos que queramos mostrar:</span>
+    <span class="hljs-comment">//protected $visible = array('name', 'address');</span>
+
+}
+</code></pre>
+<!-- ************************************************************************-->
+<h2 id="respuestas-especiales">Respuestas especiales</h2>
+<p>Con lo que hemos visto en la sección anterior solo se realizaría la transformación a JSON, pero si queremos devolverlo como respuesta de una petición (por ejemplo, como respuesta a una petición de un método de una API), tendremos que utilizar el método <code>Response::json</code>, el cual además añadirá en la cabecera de la respuesta que los datos enviados están en formato JSON. Por ejemplo:</p>
+<pre><code class="lang-php"><span class="hljs-variable">$usuarios</span> = User::all();
+
+<span class="hljs-keyword">return</span> Response::json( <span class="hljs-variable">$usuarios</span> );
+</code></pre>
+<p>Este método también puede recibir otro tipo de valores (como una variable, un array, etc.) y los transformará también a JSON para devolverlos como respuesta a la petición:</p>
+<pre><code class="lang-php"><span class="hljs-keyword">return</span> Response::json( <span class="hljs-keyword">array</span>(<span class="hljs-string">'name'</span> =&gt; <span class="hljs-string">'Steve'</span>, <span class="hljs-string">'state'</span> =&gt; <span class="hljs-string">'CA'</span>) );
+</code></pre>
+<p>Si queremos especificar el código de la respuesta, por ejemplo cuando queremos indicar que ha sucedido algún error, podemos añadirlo como segundo parámetro, por ejemplo:</p>
+<pre><code class="lang-php"><span class="hljs-keyword">return</span> Response::json( <span class="hljs-keyword">array</span>(<span class="hljs-string">'error'</span>=&gt;<span class="hljs-keyword">true</span>, <span class="hljs-string">'msg'</span>=&gt;<span class="hljs-string">'Error al procesar la petición'</span> ), <span class="hljs-number">500</span> );
+</code></pre>
+<p>La lista completa de los códigos que podemos utilizar la podéis encontrar en:</p>
+<p><a href="http://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP" target="_blank">http://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP</a></p>
+<!-- ************************************************************************-->
+<h1 id="grupos-de-rutas-con-prefijo">Grupos de rutas con prefijo</h1>
+<p>Una opción interesante al incluir rutas en el fichero de rutas es poder agruparlas. Ya hemos visto esta opción para aplicar un determinado filtro a un grupo de rutas, pero también podemos utilizarlo para indicar un prefijo. Por ejemplo, si queremos que un grupo de rutas empiece por el prefijo <code>api/v1</code> tendríamos que hacer lo siguiente:</p>
+<pre><code class="lang-php">Route::group(<span class="hljs-keyword">array</span>(<span class="hljs-string">'prefix'</span> =&gt; <span class="hljs-string">'api/v1'</span>), <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>
+</span>{
+    Route::get(<span class="hljs-string">'recurso'</span>,      <span class="hljs-string">'Controller@getRecurso'</span>);
+    Route::post(<span class="hljs-string">'recurso'</span>,     <span class="hljs-string">'Controller@postRecurso'</span>);
+    Route::get(<span class="hljs-string">'recurso/{id}'</span>, <span class="hljs-string">'Controller@putRecurso'</span>);
+    <span class="hljs-comment">//...</span>
+});
+</code></pre>
+<!-- ************************************************************************-->
+<h1 id="autenticacin-http-bsica">Autenticación HTTP básica</h1>
+<p>El sistema de autenticación HTTP básica proporciona una forma rápida de identificar a los usuarios sin necesidad de crear una página con un formulario de login. Este sistema, cuando se accede a través de la web, automáticamente mostrará una ventana emergente para solicitar los datos de acceso:</p>
+<p><img src="images/web_laravel/auth_basic.png" alt=""></p>
+<p>Pero es más común su utilización para proteger las rutas de una API. En este caso las credenciales se tendrían que enviar en la cabecera de la petición.</p>
+<p>Para proteger una ruta usando el sistema de autenticación básico simplemente tenemos que añadir el filtro llamado <code>auth.basic</code> a la ruta o grupo de rutas, de la forma:</p>
+<pre><code class="lang-php">Route::get(<span class="hljs-string">'profile'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'before'</span> =&gt; <span class="hljs-string">'auth.basic'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-comment">// Zona de acceso restringido</span>
+}));
+</code></pre>
+<p>Por defecto, este filtro utiliza la columna <code>email</code> de la tabla de usuarios para la validación. En caso de querer utilizar otro campo tendríamos que editar el fichero de filtros <code>app/filters.php</code> y modificar el filtro <code>auth.basic</code> para pasarme como primer parámetro el nombre de la columna. Por ejemplo, si queremos utilizar la columna <code>username</code> tendríamos que hacer:</p>
+<pre><code class="lang-php">Route::filter(<span class="hljs-string">'auth.basic'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">return</span> Auth::basic(<span class="hljs-string">'username'</span>);
+});
+</code></pre>
+<p>Una vez superada la autenticación básica se crea la sesión del usuario y en cliente se almacenaría una cookie con el identificador de la sesión. Si no queremos que la sesión se mantenga (por ejemplo, a través de una API queremos solicitar siempre el usuario y contraseña), simplemente tendremos que cambiar el filtro <code>auth.basic</code> por <code>auth.once</code>, el cual funciona exactamente igual pero sin persistir la sesión del usuario:</p>
+<pre><code class="lang-php">Route::filter(<span class="hljs-string">'basic.once'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">return</span> Auth::onceBasic();
+});
+</code></pre>
+<!-- ************************************************************************-->
+<h2 id="pruebas-con-_curl_">Pruebas con <em>cURL</em></h2>
+<p>Si intentamos acceder a una ruta protegida mediante autenticación básica utilizando los comando de <em>curl</em> que hemos visto obtendremos el siguiente error:</p>
+<pre><code class="lang-bash">HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">401</span> Unauthorized
+</code></pre>
+<p>Pero <em>curl</em> permite también indicar el usuario y contraseña añadiendo el parámetro <code>-u</code> o también <code>--user</code> (equivalente):</p>
+<pre><code class="lang-bash">$ curl --user username:password http://localhost/recurso
+$ curl -u username:password http://localhost/recurso
+</code></pre>
+<blockquote>
+<p>Si solamente indicamos el usuario (y no el password) se nos solicitará inmediatamente, y además al introducirlo no se verá escrito en la pantalla.</p>
+</blockquote>
+<!-- ************************************************************************-->
+<!-- ************************************************************************-->
+<!-- ************************************************************************-->
+<!-- ************************************************************************-->
+<!-- ************************************************************************-->
+<h1 id="ejercicios">Ejercicios</h1>
+<p>En esta sección de ejercicios vamos a terminar la web de gestión del videoclub añadiendo notificaciones, el funcionamiento de algunos botones que faltaban y por último, una API RESTful para el acceso externo.</p>
+<!-- ************************************ -->
+<h2 id="ejercicio-1---notificaciones-08-puntos">Ejercicio 1 - Notificaciones (0.8 puntos)</h2>
+<p>En este primer ejercicio vamos a instalar una librería externa para mostrar las notificaciones de nuestra aplicación, para esto tenéis que seguir los pasos indicados en el apartado de teoría &quot;Ejemplo: instalación de paquete de notificaciones&quot;.</p>
+<p>Una vez instalado y correctamente configurado vamos a modificar los controladores para mostrar un aviso tipo <code>success</code> después de guardar y editar una película (la notificación se tendrá que añadir antes de realizar la redirección). Además también mostraremos una notificación de tipo <code>error</code> cuando se produzca un error en la autenticación del usuario.</p>
+<p>Por último vamos a modificar la vista con el layout principal, situada en <code>app/views/layouts/master.blade.php</code>, para indicar que se muestren las notificaciones justo antes del contenido principal:</p>
+<pre><code class="lang-php">&lt;div class="container"&gt;
+    {{ Notification::showAll() }}
+
+    @yield('content')
+&lt;/div&gt;
+</code></pre>
+<!-- ************************************ -->
+<h2 id="ejercicio-2---completando-botones--1-punto">Ejercicio 2 - Completando botones  (1 punto)</h2>
+<p>En este ejercicio vamos añadir la funcionalidad de los botones de alquilar, devolver y eliminar película. Todos estos botones están situados en la vista detalle de una película (el de eliminar lo tendremos que añadir). En todos los casos tendremos que crear una nueva ruta, un nuevo método en el controlador, actualizar el botón en la vista y mostrar una notificación después de realizar la acción. En la siguiente tabla se muestra un resumen de las rutas:</p>
+<table>
+<thead>
+<tr>
+<th>Ruta</th>
+<th>Tipo</th>
+<th>Controlador / Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/catalog/rent/{id}</td>
+<td>PUT</td>
+<td>CatalogController@putRent</td>
+</tr>
+<tr>
+<td>/catalog/return/{id}</td>
+<td>PUT</td>
+<td>CatalogController@putReturn</td>
+</tr>
+<tr>
+<td>/catalog/delete/{id}</td>
+<td>DELETE</td>
+<td>CatalogController@deleteMovie</td>
+</tr>
+</tbody>
+</table>
+<p>En primer lugar tenéis que añadir las rutas al fichero <code>routes.php</code> y posteriormente modificar el controlador <code>CatalogController</code> para añadir los tres nuevos métodos. Estos tres métodos son similares al método que ya habíamos implementado antes para editar los datos de una película. En el caso de <code>putRent</code> y <code>putReturn</code> únicamente modificaremos el campo <code>rented</code> asignándole el valor <em>true</em> y <em>false</em> respectivamente, y una vez guardado añadiremos la notificación y realizaremos una redirección a la pantalla con la vista detalle de la película. En el método <code>deleteMovie</code> también obtendremos el registro de la película pero tendremos que llamar al método <code>delete()</code> de la misma, una vez hecho esto añadiremos la notificación y realizaremos una redirección al listado general de películas.</p>
+<p>A continuación tenemos que editar la vista detalle de películas para modificar los botones (<code>app/views/catalog/show.blade.php</code>). Dado que la acciones se tienen que realizar usando peticiones HTTP tipo PUT y DELETE no podemos poner un enlace normal (ya que este sería tipo GET). Para solucionarlo tenemos que crear un formulario alrededor del botón y asignar al formulario el método correspondiente, por ejemplo:</p>
+<pre><code class="lang-php">{{ Form::open(<span class="hljs-keyword">array</span>(<span class="hljs-string">'method'</span> =&gt; <span class="hljs-string">'put'</span>, <span class="hljs-string">'action'</span>=&gt;<span class="hljs-keyword">array</span>(<span class="hljs-string">'CatalogController@putReturn'</span>, <span class="hljs-variable">$pelicula</span><span class="hljs-variable">-&gt;id</span>))) }}
+    {{ Form::submit(<span class="hljs-string">'Devolver película'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'class'</span> =&gt; <span class="hljs-string">'btn btn-danger'</span>)) }}
+{{ Form::close() }}
+</code></pre>
+<!-- ************************************ -->
+<h2 id="ejercicio-3---api-restful-y-pruebas-12-puntos">Ejercicio 3 - Api Restful y pruebas (1.2 puntos)</h2>
+<p>En este ejercicio vamos a crear una API tipo RESTful para permitir el acceso y gestión del catálogo del videoclub de forma externa. En la siguiente tabla se muestra el listado de todas las rutas que vamos a definir para la API:</p>
+<table>
+<thead>
+<tr>
+<th>Ruta</th>
+<th>Método</th>
+<th>Filtro</th>
+<th>Controlador / Método</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/api/v1/catalog</td>
+<td>GET</td>
+<td></td>
+<td>APICatalogController@index</td>
+</tr>
+<tr>
+<td>/api/v1/catalog/{id}</td>
+<td>GET</td>
+<td></td>
+<td>APICatalogController@show</td>
+</tr>
+<tr>
+<td>/api/v1/catalog</td>
+<td>POST</td>
+<td>auth.once</td>
+<td>APICatalogController@store</td>
+</tr>
+<tr>
+<td>/api/v1/catalog/{id}</td>
+<td>PUT</td>
+<td>auth.once</td>
+<td>APICatalogController@update</td>
+</tr>
+<tr>
+<td>/api/v1/catalog/{id}</td>
+<td>DELETE</td>
+<td>auth.once</td>
+<td>APICatalogController@destroy</td>
+</tr>
+<tr>
+<td>/api/v1/catalog/{id}/rent</td>
+<td>PUT</td>
+<td>auth.once</td>
+<td>APICatalogController@putRent</td>
+</tr>
+<tr>
+<td>/api/v1/catalog/{id}/return</td>
+<td>PUT</td>
+<td>auth.once</td>
+<td>APICatalogController@putReturn</td>
+</tr>
+</tbody>
+</table>
+<p>Por lo tanto, tendremos que definir todas las rutas RESTful para el catálogo, además de dos especiales: <code>/rent</code> y <code>/return</code>.
+Todos los métodos estarán protegidos con contraseña a excepción de <code>index</code> y <code>show</code> que serán públicos.
+Tenéis que comprobar que las rutas y filtros sean los correctos usando el método de Artisan <code>php artisan routes</code>.</p>
+<blockquote>
+<p>Pista: para poder aplicar un filtro solamente a algunos de los métodos del controlador tendréis que separar la declaración de las rutas. Para esto podéis utilizar el tercer parámetro con las opciones <code>only</code> y <code>except</code>.</p>
+</blockquote>
+<p>A continuación tenéis que añadir el nuevo controlador <code>APICatalogController</code> (usando el comando de Artisan) y completar sus métodos. Las acciones y contenidos de estos métodos serán muy similares a los de <code>CatalogController</code>, pero teniendo en cuenta que no tendremos que devolver una nueva vista sino directamente el contenido de la consulta en formato JSON, por ejemplo, el método que devuelve el listado de todas las películas sería simplemente:</p>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">index</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">return</span> Response::json( Movie::all() );
+}
+</code></pre>
+<p>Para devolver una respuesta en los métodos que realizan alguna acción (por ejemplo para indicar que la película se ha modificado correctamente o si ha habido algún error de validación) podemos realizar lo siguiente:</p>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">putRent</span><span class="hljs-params">(<span class="hljs-variable">$id</span>)</span>
+</span>{
+    <span class="hljs-variable">$m</span> = Movie::findOrFail( <span class="hljs-variable">$id</span> );
+    <span class="hljs-variable">$m</span><span class="hljs-variable">-&gt;rented</span> = <span class="hljs-keyword">true</span>;
+    <span class="hljs-variable">$m</span><span class="hljs-variable">-&gt;save</span>();
+
+    <span class="hljs-keyword">return</span> Response::json( <span class="hljs-keyword">array</span>(<span class="hljs-string">'error'</span> =&gt; <span class="hljs-keyword">false</span>,
+                                  <span class="hljs-string">'msg'</span> =&gt; <span class="hljs-string">'La película se ha marcado como alquilada'</span> ) );
+}
+</code></pre>
+<p>Por último, utiliza <code>curl</code> para comprobar que todas las rutas que has creado funcionan correctamente. Recuerda que para enviar</p>
+<pre><code class="lang-bash">curl -i -H <span class="hljs-string">"Accept: application/json"</span> -H <span class="hljs-string">"Content-Type: application/json"</span> -X PUT <span class="hljs-operator">-d</span> <span class="hljs-string">'{"title":"nuevo titulo"}'</span> http://localhost/catalog/<span class="hljs-number">21</span>
+</code></pre>
+<blockquote>
+<p>Aviso: hemos de tener cuidado con el método de actualizar los datos de una película, ya que los campos que no se envíen se asignarán como vacíos. Para solucionar esto podemos actualizar solamente los campos que contengan algún valor o enviar siempre todos los campos.</p>
+</blockquote>
+<!-- ************************************ -->
+<!--
+## Ejercicio Opcional - Validación
+
+De forma opcional se pide realizar la validación de los datos enviados desde los formularios para crear y editar películas.
+El formato de los datos tendrá que ser el siguiente:
+
+| Campo    | Validaciones |
+| -------- | ------------ |
+| title    | requerido, longitud máxima 255 |
+| year     | requerido, longitud máxima 8 |
+| director | requerido, longitud máxima 64 |
+| poster   | requerido, formato URL, lontitud máxima 255 |
+
+
+En caso de error se tendrá que mostrar el error correspondiente usando la librería de notificaciones que hemos instalado en el ejercicio 1.
+
+Podéis encontrar información sobre como realizar las validaciones en la documentación de Laravel: http://laravel.com/docs/4.2/validation
+
+
+-->
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./capitulo_laravel_4.html" class="navigation navigation-prev " aria-label="Previous page: Laravel 4. Datos de entrada y control de usuarios"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./capitulo_rest.html" class="navigation navigation-next " aria-label="Next page: Servicios Rest"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

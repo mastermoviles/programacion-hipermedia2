@@ -1,0 +1,764 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Laravel 4. Datos de entrada y control de usuarios | Introducción</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="./capitulo_laravel_5.html" />
+    
+    
+    <link rel="prev" href="./capitulo_laravel_3.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="15" data-basepath="." data-revision="1422271212353">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introducción
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="capitulo_introduccion_web.html">
+            
+                
+                    <a href="./capitulo_introduccion_web.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Introducción al desarrollo Web
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="capitulo_introduccion_javascript.html">
+            
+                
+                    <a href="./capitulo_introduccion_javascript.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Introducción a JavaScript
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="capitulo_diseno_responsive.html">
+            
+                
+                    <a href="./capitulo_diseno_responsive.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Diseño Responsive
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="capitulo_diseno_responsive_avanzado.html">
+            
+                
+                    <a href="./capitulo_diseno_responsive_avanzado.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Diseño Responsive avanzado
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="capitulo_jquery_mobile.html">
+            
+                
+                    <a href="./capitulo_jquery_mobile.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         JQuery Mobile
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="capitulo_jquery_mobile_avanzado.html">
+            
+                
+                    <a href="./capitulo_jquery_mobile_avanzado.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         JQuery Mobile avanzado
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="capitulo_sencha_touch_1.html">
+            
+                
+                    <a href="./capitulo_sencha_touch_1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         Sencha Touch 1. Introducción
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="capitulo_sencha_touch_2.html">
+            
+                
+                    <a href="./capitulo_sencha_touch_2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Sencha Touch 2. Componentes
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="capitulo_sencha_touch_3.html">
+            
+                
+                    <a href="./capitulo_sencha_touch_3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         Sencha Touch 3. Almacenamiento
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="capitulo_phonegap.html">
+            
+                
+                    <a href="./capitulo_phonegap.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         PhoneGap 1. Introducción
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="capitulo_phonegap_avanzado.html">
+            
+                
+                    <a href="./capitulo_phonegap_avanzado.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         PhoneGap 2. Avanzado
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="capitulo_laravel_1.html">
+            
+                
+                    <a href="./capitulo_laravel_1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         Laravel 1. Introducción
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="capitulo_laravel_2.html">
+            
+                
+                    <a href="./capitulo_laravel_2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         Laravel 2. Controladores, filtros y formularios
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="capitulo_laravel_3.html">
+            
+                
+                    <a href="./capitulo_laravel_3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         Laravel 3. Base de datos
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="15" data-path="capitulo_laravel_4.html">
+            
+                
+                    <a href="./capitulo_laravel_4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         Laravel 4. Datos de entrada y control de usuarios
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="capitulo_laravel_5.html">
+            
+                
+                    <a href="./capitulo_laravel_5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         Laravel 5. Paquetes, Rest y Curl
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="capitulo_rest.html">
+            
+                
+                    <a href="./capitulo_rest.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         Servicios Rest
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Introducción</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_12">
+                    
+                        <h1 id="laravel-4---datos-de-entrada-y-control-de-usuarios">Laravel 4 - Datos de entrada y Control de usuarios</h1>
+<!-- ************************************************************************-->
+<h1 id="datos-de-entrada">Datos de entrada</h1>
+<p>Laravel facilita el acceso a los datos de entrada del usuario a través de solo unos poco métodos. No importa el tipo de petición que se haya realizado (POST, GET, PUT, DELETE), si los datos son de un formulario o si se han añadido a la <em>query string</em>, en todos los casos se obtendrán de la misma forma: </p>
+<pre><code class="lang-php"><span class="hljs-variable">$name</span> = Input::get(<span class="hljs-string">'name'</span>);
+
+<span class="hljs-comment">// También podemos especificar un valor por defecto como segundo parámetro</span>
+<span class="hljs-variable">$name</span> = Input::get(<span class="hljs-string">'name'</span>, <span class="hljs-string">'Laura'</span>);
+</code></pre>
+<p>Si lo necesitamos podemos comprobar si un determinado valor existe en los datos de entrada:</p>
+<pre><code class="lang-php"><span class="hljs-keyword">if</span> (Input::has(<span class="hljs-string">'name'</span>))
+{
+    <span class="hljs-comment">//</span>
+}
+</code></pre>
+<p>O también podemos obtener todos los datos de entrada a la vez (en un array) o solo algunos de ellos: </p>
+<pre><code class="lang-php"><span class="hljs-comment">// Obtener todos: </span>
+<span class="hljs-variable">$input</span> = Input::all();
+
+<span class="hljs-comment">// Obtener solo los campos indicados: </span>
+<span class="hljs-variable">$input</span> = Input::only(<span class="hljs-string">'username'</span>, <span class="hljs-string">'password'</span>);
+
+<span class="hljs-comment">// Obtener todos excepto los indicados: </span>
+<span class="hljs-variable">$input</span> = Input::except(<span class="hljs-string">'credit_card'</span>);
+</code></pre>
+<p>Si la entrada proviene de un <em>input</em> tipo array de un formulario (por ejemplo una lista de <em>checkbox</em>), si queremos podremos utilizar la siguiente notación con puntos para acceder a los elementos del array de entrada: </p>
+<pre><code class="lang-php"><span class="hljs-variable">$input</span> = Input::get(<span class="hljs-string">'products.0.name'</span>);
+</code></pre>
+<p>Si la entrada está en formato JSON (por ejemplo cuando nos comunicamos a través de una API es bastante común) también podremos acceder a los diferentes campos de los datos de entrada de forma normal (con <code>Input::get</code>).</p>
+<!-- ************************************ -->
+<h2 id="ficheros-de-entrada">Ficheros de entrada</h2>
+<p>Laravel facilita una serie de clases para trabajar con los ficheros de entrada. Por ejemplo para obtener un fichero que se ha enviado en el campo con nombre <code>photo</code> y guardarlo en una variable, tenemos que hacer: </p>
+<pre><code class="lang-php"><span class="hljs-variable">$file</span> = Input::file(<span class="hljs-string">'photo'</span>);
+</code></pre>
+<p>Si queremos podemos comprobar si un determinado campo tiene un fichero asignado: </p>
+<pre><code class="lang-php"><span class="hljs-keyword">if</span> (Input::hasFile(<span class="hljs-string">'photo'</span>))
+{
+    <span class="hljs-comment">//</span>
+}
+</code></pre>
+<p>El objeto que recuperamos con <code>Input::file</code> es una instancia de la clase <code>Symfony\Component\HttpFoundation\File\UploadedFile</code>, la cual extiende la clase de PHP <code>SplFileInfo</code> (<a href="http://php.net/manual/es/class.splfileinfo.php" target="_blank">http://php.net/manual/es/class.splfileinfo.php</a>), por lo tanto, tendremos muchos métodos que podemos utilizar para obtener datos del fichero o para gestionarlo. </p>
+<p>Por ejemplo, para comprobar si el fichero que se ha subido es válido: </p>
+<pre><code class="lang-php"><span class="hljs-keyword">if</span> (Input::file(<span class="hljs-string">'photo'</span>)<span class="hljs-variable">-&gt;isValid</span>())
+{
+    <span class="hljs-comment">//</span>
+}
+</code></pre>
+<p>O para mover el fichero de entrada a una ruta determinada: </p>
+<pre><code class="lang-php"><span class="hljs-comment">// Mover el fichero a la ruta conservando el nombre original: </span>
+Input::file(<span class="hljs-string">'photo'</span>)<span class="hljs-variable">-&gt;move</span>(<span class="hljs-variable">$destinationPath</span>);
+
+<span class="hljs-comment">// Mover el fichero a la ruta con un nuevo nombre:</span>
+Input::file(<span class="hljs-string">'photo'</span>)<span class="hljs-variable">-&gt;move</span>(<span class="hljs-variable">$destinationPath</span>, <span class="hljs-variable">$fileName</span>);
+</code></pre>
+<p>Otros métodos que podemos utilizar para recuperar información del fichero son: </p>
+<pre><code class="lang-php"><span class="hljs-comment">// Obtener la ruta:</span>
+<span class="hljs-variable">$path</span> = Input::file(<span class="hljs-string">'photo'</span>)<span class="hljs-variable">-&gt;getRealPath</span>();
+
+<span class="hljs-comment">// Obtener el nombre original:</span>
+<span class="hljs-variable">$name</span> = Input::file(<span class="hljs-string">'photo'</span>)<span class="hljs-variable">-&gt;getClientOriginalName</span>();
+
+<span class="hljs-comment">// Obtener la extensión: </span>
+<span class="hljs-variable">$extension</span> = Input::file(<span class="hljs-string">'photo'</span>)<span class="hljs-variable">-&gt;getClientOriginalExtension</span>();
+
+<span class="hljs-comment">// Obtener el tamaño: </span>
+<span class="hljs-variable">$size</span> = Input::file(<span class="hljs-string">'photo'</span>)<span class="hljs-variable">-&gt;getSize</span>();
+
+<span class="hljs-comment">// Obtener el MIME Type:</span>
+<span class="hljs-variable">$mime</span> = Input::file(<span class="hljs-string">'photo'</span>)<span class="hljs-variable">-&gt;getMimeType</span>();
+</code></pre>
+<!-- ************************************************************************-->
+<h1 id="control-de-usuarios">Control de usuarios</h1>
+<p>Laravel también incluye una seríe de métodos y clases que harán que la implementación del control de usuarios sea muy sencilla. De hecho, casi todo el trabajo ya está hecho. La configuración del sistema de autenticación se puede encontrar en el fichero <code>app/config/auth.php</code>, el cual contiene varias opciones (bien documentadas) que nos permitirán, por ejemplo: cambiar el sistema de autenticación (que por defecto es a través de Eloquent), cambiar el modelo de datos usado para los usuarios (por defecto será <code>User</code>) y cambiar la tabla de usuarios (que por defecto será <code>users</code>). Si vamos a utilizar estos valores no será necesario que realicemos ninguna configuración. </p>
+<p>Por defecto, al crear un nuevo proyecto de Laravel, ya se incluye el modelo de usuario en la carpeta <code>app/models</code> con toda la configuración necesaria también puesta. </p>
+<p>El único trabajo que tendremos que realizar nosotros será crear la migración de la tabla <code>users</code>, que por defecto tendrá que ser como la siguiente: </p>
+<pre><code class="lang-php">Schema::create(<span class="hljs-string">'users'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(<span class="hljs-variable">$table</span>)</span> </span>{
+        <span class="hljs-variable">$table</span><span class="hljs-variable">-&gt;increments</span>(<span class="hljs-string">'id'</span>);
+        <span class="hljs-variable">$table</span><span class="hljs-variable">-&gt;string</span>(<span class="hljs-string">'username'</span>, <span class="hljs-number">16</span>)<span class="hljs-variable">-&gt;unique</span>();
+        <span class="hljs-variable">$table</span><span class="hljs-variable">-&gt;string</span>(<span class="hljs-string">'password'</span>, <span class="hljs-number">64</span>);  <span class="hljs-comment">// Mínimo 60</span>
+        <span class="hljs-variable">$table</span><span class="hljs-variable">-&gt;rememberToken</span>();
+        <span class="hljs-variable">$table</span><span class="hljs-variable">-&gt;timestamps</span>();
+});
+</code></pre>
+<p>Como se puede ver el nombre de la tabla a crear es <code>users</code>, con un índice <code>id</code> autoincremental, y los campos de <code>username</code>, <code>password</code>. Hemos marcado el campo <em>username</em> para que sea único (no se permitirá que varios usuarios tengan el mismo <em>username</em>) y el <em>password</em> con una longitud de 64 (Laravel indica que como mínimo tiene que ser de 60 caractereres). Además añadimos los <em>timestamps</em> que usa Eloquent automáticamente y el <code>remember_token</code> que utiliza el sistema de autenticación para recordar la sesión del usuario. </p>
+<blockquote>
+<p>Podemos añadir todos los campos que queramos a esta tabla, para por ejemplo guardar el nombre y apellidos del usuario, su dirección o teléfono, etc. </p>
+</blockquote>
+<!-- ************************************ -->
+<h2 id="almacenar-un-nuevo-usuario">Almacenar un nuevo usuario</h2>
+<p>A la hora de almacenar un nuevo usuario en la tabla de usuarios la única precaución que tenemos que llevar es cifrar el password mediante el siguiente método: </p>
+<pre><code class="lang-php"><span class="hljs-variable">$password_cifrado</span> = Hash::make(<span class="hljs-string">'mi-super-password'</span>);
+</code></pre>
+<p>Por ejemplo, si obtenemos los datos del nuevo usuario de un formulario podríamos utilizar el siguiente código para crear la instancia en la base de datos: </p>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">postCreate</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-variable">$user</span> = <span class="hljs-keyword">new</span> User;
+    <span class="hljs-variable">$user</span><span class="hljs-variable">-&gt;username</span> = Input::get(<span class="hljs-string">'username'</span>);
+    <span class="hljs-variable">$user</span><span class="hljs-variable">-&gt;password</span> = Hash::make( Input::get(<span class="hljs-string">'password'</span>) );
+    <span class="hljs-variable">$user</span><span class="hljs-variable">-&gt;save</span>();
+}
+</code></pre>
+<!-- ************************************* -->
+<h2 id="atenticar-usuarios">Atenticar usuarios</h2>
+<p>Para comprobar los datos de un usuario y validarlo en el sistema tenemos que utilizar el método <code>Auth::attempt</code> como en el siguiente ejemplo: </p>
+<pre><code class="lang-php"><span class="hljs-keyword">if</span> (Auth::attempt(<span class="hljs-keyword">array</span>(<span class="hljs-string">'username'</span> =&gt; <span class="hljs-variable">$username</span>, <span class="hljs-string">'password'</span> =&gt; <span class="hljs-variable">$password</span>)))
+{
+    <span class="hljs-keyword">return</span> Redirect::intended(<span class="hljs-string">'admin-url'</span>);
+}
+</code></pre>
+<p>Este método recibe un array de credenciales y las valida comparándolas con los datos en la base de datos de usuarios, si existe un usuario con dichas credenciales devolverá <em>true</em> y se creará la sesión del usuario; en caso contrario el método devolverá <em>false</em>. </p>
+<p>El campo &quot;<em>username</em>&quot; en realidad no es obligatorio que tenga ese nombre, sino que podría ser cualquier otro, por ejemplo &quot;<em>email</em>&quot;; solamente tiene que coincidir con el campo que se utilice en la base de datos para almacenarlo. </p>
+<p>El método utilizado en el ejemplo como respuesta <code>Redirect::intended</code> realiza una redirección a la URL que estaba intentando acceder el usuario, en caso de que hubiese accedido directamente al formulario de login se utilizará la dirección pasada por parámetro. </p>
+<p>A continuación se incluye un ejemplo de la validación de un usuario. El controlador <code>UserController</code> contiene dos métodos para realizar esta validación. El método <code>getLogin</code> se llamará cuando se realiza una petición tipo GET a la pantalla de <em>login</em>. Y el método <code>postLogin</code> cuando se envían los datos por POST del formulario de <em>login</em>: </p>
+<pre><code class="lang-php"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseController</span> 
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getLogin</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> View::make(<span class="hljs-string">'user.login'</span>);
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">postLogin</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-variable">$username</span> = Input::get(<span class="hljs-string">'username'</span>);
+        <span class="hljs-variable">$password</span> = Input::get(<span class="hljs-string">'password'</span>);
+
+        <span class="hljs-keyword">if</span> (Auth::attempt([<span class="hljs-string">'username'</span> =&gt; <span class="hljs-variable">$username</span>, <span class="hljs-string">'password'</span> =&gt; <span class="hljs-variable">$password</span>]))
+        {
+            <span class="hljs-keyword">return</span> Redirect::intended(<span class="hljs-string">'admin-url'</span>);
+        }
+
+        <span class="hljs-keyword">return</span> Redirect::action(<span class="hljs-string">'UserController@getLogin'</span>)
+            <span class="hljs-variable">-&gt;withInput</span>(Input::except(<span class="hljs-string">'password'</span>))
+            <span class="hljs-variable">-&gt;withErrors</span>(<span class="hljs-string">'Error en la validación del usuario'</span>);
+    }
+}
+</code></pre>
+<p>Como se puede ver, en el método <code>postLogin</code>, si no se realiza la validación correctamente se redirige otra vez al método <code>getLogin</code> con los errores que se hayan producido y la entrada del usuario. </p>
+<p>El método <code>attempt</code> además permite pasar un segundo parámetro para indicar que el usuario será recordado hasta que se cierre la sesión manualmente. Es decir, aunque se cierre el navegador y pasen varios días el usuario seguiría estando autorizado. Para utilizar esta opción es necesario que la tabla de usuarios tenga el campo <code>remember_token</code> como se ha especificado en la introducción. A continuación se incluye un ejemplo de uso: </p>
+<pre><code class="lang-php"><span class="hljs-keyword">if</span> (Auth::attempt(<span class="hljs-keyword">array</span>(<span class="hljs-string">'email'</span> =&gt; <span class="hljs-variable">$email</span>, <span class="hljs-string">'password'</span> =&gt; <span class="hljs-variable">$password</span>), <span class="hljs-keyword">true</span>))
+{
+    <span class="hljs-comment">// Usuario validado con la opción "remember me"</span>
+}
+</code></pre>
+<p>Además de usuario y contraseña, en el método <code>attempt</code> podemos pasar otra serie de parámetros en las credenciales, las cuales se utilizarán para buscar un usuario que cumpla todos esos requisitos. Esta opción es muy útil para buscar usuarios que hayan validado su cuenta de email o que hayan aceptado los términos y condiciones, por ejemplo: </p>
+<pre><code class="lang-php"><span class="hljs-keyword">if</span> (Auth::attempt(<span class="hljs-keyword">array</span>(<span class="hljs-string">'email'</span> =&gt; <span class="hljs-variable">$email</span>, <span class="hljs-string">'password'</span> =&gt; <span class="hljs-variable">$password</span>, <span class="hljs-string">'active'</span> =&gt; <span class="hljs-number">1</span>)))
+{
+    <span class="hljs-comment">// Usuario validado </span>
+}
+</code></pre>
+<!-- ************************************* -->
+<h2 id="comprobar-si-un-usuario-est-autenticado">Comprobar si un usuario está autenticado</h2>
+<p>Para comprobar si el usuario actual se ha autenticado en la aplicación podemos utilizar el método <code>Auth::check()</code> de la forma: </p>
+<pre><code class="lang-php"><span class="hljs-keyword">if</span> (Auth::check())
+{
+    <span class="hljs-comment">// El usuario está correctamente autenticado</span>
+}
+</code></pre>
+<!-- ************************************* -->
+<h2 id="acceder-a-los-datos-del-usuario-atenticado">Acceder a los datos del usuario atenticado</h2>
+<p>Una vez que el usuario está autenticado podemos acceder a los datos del mismo a través del método <code>Auth::user()</code>, por ejemplo: </p>
+<pre><code class="lang-php"><span class="hljs-variable">$email</span> = Auth::user()<span class="hljs-variable">-&gt;email</span>;
+</code></pre>
+<!-- ************************************* -->
+<h2 id="cerrar-la-sesin">Cerrar la sesión</h2>
+<p>Para cerra la sesión del usuario actualmente autenticado tenemos que utilizar el método: </p>
+<pre><code class="lang-php">Auth::logout();
+</code></pre>
+<p>Posteriormente podremos hacer una redirección a una página principal para usuarios no autenticados. </p>
+<!-- ************************************* -->
+<h2 id="proteger-rutas">Proteger rutas</h2>
+<p>El sistema de autenticación de Laravel también incorpora una serie de filtros (ver el fichero <code>app/filters.php</code>) para comprobar que el usuario que accede a una determinada ruta o grupo de rutas esté autenticado: </p>
+<pre><code class="lang-php">Route::get(<span class="hljs-string">'admin/catalog'</span>, <span class="hljs-keyword">array</span>(<span class="hljs-string">'before'</span> =&gt; <span class="hljs-string">'auth'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-comment">// Solo se permite el acceso a usuarios autenticados</span>
+}));
+
+<span class="hljs-comment">// O por ejemplo para proteger un grupo de rutas: </span>
+Route::group(<span class="hljs-keyword">array</span>(<span class="hljs-string">'before'</span> =&gt; <span class="hljs-string">'auth'</span>), <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>
+</span>{
+    Route::get(<span class="hljs-string">'catalog'</span>,        <span class="hljs-string">'CatalogController@getIndex'</span>);
+    Route::get(<span class="hljs-string">'catalog/create'</span>, <span class="hljs-string">'CatalogController@getCreate'</span>);
+});
+</code></pre>
+<!-- ************************************************************************-->
+<!-- ************************************************************************-->
+<!-- ************************************************************************-->
+<!-- ************************************************************************-->
+<!-- ************************************************************************-->
+<h1 id="ejercicios">Ejercicios</h1>
+<p>En los ejercicios de esta sección vamos a completar el proyecto del videoclub terminando el procesamiento de los formularios y añadiendo el sistema de autenticación de usuarios.</p>
+<!-- ************************************ -->
+<h2 id="ejercicio-1---migracin-de-la-tabla-usuarios-05-puntos">Ejercicio 1 - Migración de la tabla usuarios (0.5 puntos)</h2>
+<p>En primer lugar vamos a crear la migración para almacenar los usuarios que tendrán acceso a la plataforma de gestión del videoclub. Para esto utilizaremos el comando de artisan para generar una migración con el nombre <code>create_users_table</code> para la tabla <code>users</code>. Una vez creada editaremos el fichero generado para añadir todos los campos necesarios a la tabla, estos son:  </p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Tipo</th>
+<th>Modificador</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>Autoincremental</td>
+<td></td>
+</tr>
+<tr>
+<td>username</td>
+<td>String de longitud 16</td>
+<td><em>unique</em></td>
+</tr>
+<tr>
+<td>password</td>
+<td>String de longitud 64</td>
+<td></td>
+</tr>
+<tr>
+<td>remember_token</td>
+<td>Campo remember_token</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamps</td>
+<td>Timestamps de Eloquent</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Recuerda que en el método <code>down</code> de la migración tienes que deshacer los cambios que has hecho en el método <code>up</code>, en este caso sería eliminar la tabla.</p>
+</blockquote>
+<p>Por último usamos el comando de artisan que añade las nuevas migraciones y comprobamos en PHPMyAdmin que la tabla se ha creado correctamente con los campos que le hemos indicado. </p>
+<!-- ************************************ -->
+<h2 id="ejercicio-2---_seeder_-de-usuarios-05-puntos">Ejercicio 2 - <em>Seeder</em> de usuarios (0.5 puntos)</h2>
+<p>Ahora vamos a proceder a rellenar la tabla <code>users</code> con los datos iniciales. Para esto editamos el fichero de semillas situado en <code>app/database/seeds/DatabaseSeeder.php</code> y seguiremos los siguientes pasos: </p>
+<ul>
+<li><p>Creamos un método privado (dentro de la misma clase) llamado <code>seedUsers()</code> que se tendrá que llamar desde el método <code>run</code> de la forma: 
+<br/></p>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">run</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-comment">// ... Llamada al seed del catálogo</span>
+
+  <span class="hljs-keyword">self</span>::seedUsers();
+  <span class="hljs-variable">$this</span><span class="hljs-variable">-&gt;command</span><span class="hljs-variable">-&gt;info</span>(<span class="hljs-string">'Tabla usuarios inicializada con datos!'</span>);
+}
+</code></pre>
+</li>
+<li>Dentro del nuevo método <code>seedUsers()</code> realizamos las siguientes acciones: <ul>
+<li>En primer lugar borramos el contenido de la tabla <code>users</code>. </li>
+<li>Y a continuación creamos un par de usuarios de prueba. Recuerda que para guardar el <em>password</em> es necesario encriptarlo manualmente usando el método <code>Hash::make</code>.</li>
+</ul>
+</li>
+</ul>
+<p>Por último tendremos que ejecutar el comando de artisan que procesa las semillas y una vez realizado esto comprobamos en PHPMyAdmin que se han añadido los usuarios a la tabla <em>users</em>. </p>
+<!-- ************************************ -->
+<h2 id="ejercicio-3---sistema-de-autenticacin-1-punto">Ejercicio 3 - Sistema de autenticación (1 punto)</h2>
+<p>En este ejercicio vamos a completar el sistema de autenticación. </p>
+<p>En primer lugar editamos el fichero <code>routes.php</code> y realizamos las siguientes acciones: </p>
+<ul>
+<li>Añadimos una nueva ruta tipo POST para la url <code>login</code> pero que apunte al método <code>postLogin</code> del controlador <code>UserController</code>.</li>
+<li>Añadimos un filtro de tipo grupo que aplique el filtro <code>auth</code> antes de la ejecución de las rutas. Este filtro tendrá que proteger todas las rutas menos a la raíz <code>/</code> y a la de <code>login</code>.</li>
+</ul>
+<p>A continuación abrimos el controlador <code>UserController</code> para completar los siguientes puntos: </p>
+<ul>
+<li><p>En el método <code>getHome</code> tendremos que comprobar si es un usuario validado o no. En caso de estar autenticado se le rediccionará a la ruta <code>catalog</code> y en caso contrario a <code>login</code></p>
+</li>
+<li><p>En el método <code>getLogout</code> ejecutamos el método para cerrar la sesión actual antes de realizar la redirección. </p>
+</li>
+<li><p>Añadimos el método <code>postLogin</code> el cual tendrá que recoger los datos enviados por el formulario y comprobar si las credenciales del usuario son válidas. En caso de que los datos del usuario sean correctos se le deberá redirigir a la ruta <code>catalog</code>, y en caso de haber algún error se le volverá a mostrar el formulario de <code>login</code>. </p>
+</li>
+</ul>
+<blockquote>
+<p>Nota: de momento en caso de error no se mostrará nada.</p>
+</blockquote>
+<!-- ************************************ -->
+<h2 id="ejercicio-4---aadir-y-editar-pelculas-1-punto">Ejercicio 4 - Añadir y editar películas (1 punto)</h2>
+<p>En primer lugar vamos a añadir las rutas que nos van a hacer falta para recoger los datos al enviar los formularios. Para esto editamos el fichero de rutas y vamos a añadir dos rutas (también protegidas por el filtro <code>auth</code>): </p>
+<ul>
+<li>Una ruta de tipo POST para la url <code>catalog/create</code> que apuntará al método <code>postCreate</code> del controlador <code>CatalogController</code>.</li>
+<li>Y otra ruta tipo PUT para la url <code>catalog/edit/{id}</code> que apuntará al método <code>putEdit</code> del controlador <code>CatalogController</code>. </li>
+</ul>
+<p>En ambos casos indicaremos que se aplique el filtro <code>csrf</code> antes de la ejecución de la ruta. </p>
+<p>A continuación vamos a editar la vista <code>catalog/edit.blade.php</code> con los siguientes cambios:</p>
+<ul>
+<li>Cambiamos al método de apertura del formulario por <code>Form::open(array(&#39;method&#39; =&gt; &#39;put&#39;))</code>, para que al enviar los datos se envíen por PUT. </li>
+<li>Tenemos que modificar todos los inputs para que en lugar de poner la cadena vacía como valor del campo (2º parámetro de <code>Form::text</code>) se ponga el valor correspondiente de la película. Por ejemplo en el primer input tendríamos que poner <code>$pelicula-&gt;title</code>. </li>
+</ul>
+<p>Por último tenemos que actualizar el controlador <code>CatalogController</code> con los dos nuevos métodos: </p>
+<ul>
+<li>En el método <code>postCreate</code> crearemos una nueva instancia del modelo <code>Movie</code>, asignaremos todos los campos (<em>title, year, director, poster</em> y <em>synopsis</em>) y los guardaremos. Por último, después de guardar, haremos una redirección a la ruta <code>catalog</code>.</li>
+<li>En el método <code>putEdit</code> buscaremos la película con el identificador pasado por parámetro, actualizaremos sus campos y los guardaremos. Por último realizaremos una redirección a la pantalla de vista detalle de la película editada. </li>
+</ul>
+<blockquote>
+<p>Nota: de momento en caso de error no se mostrará nada.</p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./capitulo_laravel_3.html" class="navigation navigation-prev " aria-label="Previous page: Laravel 3. Base de datos"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./capitulo_laravel_5.html" class="navigation navigation-next " aria-label="Next page: Laravel 5. Paquetes, Rest y Curl"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
